@@ -1,0 +1,51 @@
+{% include 'header.html' %}
+
+<section class="head-div">
+  <div class="overlay d-flex align-items-center">
+    <div class="container">
+      <h1 class="text-white">Director General's Message</h1>
+    </div>
+  </div>
+</section>
+
+<section class="dgm-div">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">{% include 'aboutsidenav.html' %}</div>
+      <div class="col-md-8">
+        <div class="dgm-text">
+          {% for data in dgm %}
+
+          <h4>{{data.title}}</h4>
+
+          {{data.description | safe}} {% comment %}
+          <p>
+            National Institute of Wind Energy is at the forefront supporting the
+            Ministry of New and Renewable Energy for the orderly development of
+            wind power in the country, for 25 years now. We offer our services
+            to the wind energy sector in R&D, Wind Resource Assessment (onshore
+            and offshore), development of Standards, Testing, Certification and
+            Skill Development.
+          </p>
+          <p>
+            As the Nodal Agency for offshore wind development in the country, we
+            also support the Ministry in the implementation of the National
+            offshore wind energy policy. This web page has been created as a
+            knowledge hub on wind energy and information to stakeholders on
+            areas of collaboration / partnerships with NIWE.
+          </p>
+          <p>Your feedback will enable us to serve you better.</p>
+          {% endcomment %}
+          <p>Yours faithfully,</p>
+          <h5>Director General</h5>
+
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+
+{% include 'footer.html' %}

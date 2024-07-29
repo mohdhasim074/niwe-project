@@ -1,0 +1,115 @@
+{% include 'header.html' %}
+
+<section class="head-div">
+  <div class="overlay d-flex align-items-center">
+    <div class="container">
+      <h1 class="text-white">The Charter</h1>
+    </div>
+  </div>
+</section>
+
+{% for data in chart %}
+
+<section class="dgm-div">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">{% include 'aboutsidenav.html' %}</div>
+      <div class="col-md-8">
+        <div class="dgm-text">
+          <p>{{data.preamble|safe}}</p>
+
+          <h3 class="pt-3">MISSION</h3>
+
+          <p>{{data.mission|safe}}</p>
+          {% comment %}
+          <p>
+            NIWE, a knowledge based institution of high quality and dedication,
+            offers services and seeks to find total solutions for the major
+            stakeholders across the entire spectrum of the wind energy sector.
+            It will support the wind turbine industry in achieving and
+            sustaining quality such that products of the highest quality and
+            reliability are installed, harnessing all energy available in the
+            wind. NIWE will strongly support the wind turbine industry in
+            developing the know-how and know-why and promoting export of
+            products and services.
+          </p>
+          {% endcomment %}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="dgm-text">
+          <h3 class="pt-3">OBJECTIVES</h3>
+
+          {{data.objectives|safe}} {% comment %}
+          <li>
+            To serve as the technical focal point for wind power development in
+            India, for promoting and accelerating the pace of utilization of
+            wind energy and support the growing wind power sector in the
+            country.
+          </li>
+          <li>
+            To develop and strengthen the facilities and capabilities, evolve
+            strategies, promote, conduct, co-ordinate and support research and
+            development programmes to achieve and maintain reliable and cost
+            effective technology in wind power systems.
+          </li>
+          <li>
+            To analyse and assess wind resources based on the data available
+            from various sources and prepare wind energy density maps / wind
+            atlas / reference wind data.
+          </li>
+          <li>
+            To prepare and establish standards including guidelines, procedures,
+            protocols for design, testing and certification of wind power
+            systems, sub-systems and components, taking into consideration the
+            Indian conditions and in line with internationally recommended
+            practices and standards and update the same based on the feedback.
+          </li>
+          <li>
+            To establish world class facilities, conduct and coordinate testing
+            of complete wind power systems, sub-systems and components according
+            to internationally accepted test procedures and criteria, whereby
+            the total performance that includes power performance, power
+            quality, noise level, dynamics, operation and safety systems is
+            tested according to agreed protocols.
+          </li>
+
+          <li>
+            To accord type approval / type certification which verifies
+            conformity with safety related requirements as per standards,
+            guidelines and other rules for design, operation and maintenance, as
+            well as adequate documentation of quality issues such as power
+            performance, noise, life expectancy and reliability.
+          </li>
+          <li>
+            To monitor the field performance of wind power systems, sub-systems
+            and components, effectively utilize this feedback for fulfillment of
+            the above objective and issue of certification, establish and update
+            the data bank on a continuous basis and serve as information Centre
+            for selective dissemination.
+          </li>
+          <li>
+            To undertake human resource development programme for the personnel
+            working in the wind energy sector.
+          </li>
+          <li>
+            To promote commercial exploitation of know-how, know-why results and
+            offer various consultancy services to the customers.
+          </li>
+          <li>
+            To promote the development and commercialization of any other wind
+            energy systems including stand-alone systems.
+          </li>
+          {% endcomment %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+<!-- footer -->
+
+{% include 'footer.html' %}

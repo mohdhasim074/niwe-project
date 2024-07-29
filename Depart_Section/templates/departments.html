@@ -1,0 +1,130 @@
+{% include 'header.html' %}
+
+
+
+    <section class="head-div">
+        <div class="overlay d-flex align-items-center">
+            <div class="container">
+                <h1 class="text-white">Departments</h1>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="department-div">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <div class="card">
+                        <div class="icon-wrapper">
+                            <i class="fa fa-cogs" aria-hidden="true"></i>
+                        </div>
+                        <h3>{{depart.0.title|safe}}</h3>
+                           
+                            {{depart.0.description|safe}}
+                        {% comment %} <p>
+                            R&D supports time bound and mission oriented Research & Development programmes to achieve
+                            world class, reliable and cost effective technology in wind power systems. RDAF supports the
+                            industry to analyse the big data obtained from wind and solar resource measurements
+                        </p> {% endcomment %}
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card">
+                        <div class="icon-wrapper">
+                            <i class="fa fa-certificate" aria-hidden="true"></i>
+                        </div>
+                        <h3>{{depart.1.title|safe}}</h3>
+
+                            {{depart.1.description|safe}}
+                        {% comment %} <p>
+                            The Division carries out Type certification of wind turbines based on IS/IEC 61400-22, And
+                            also involved in creating the necessary IT infrastructure for effective dissemination of
+                            information.
+                        </p> {% endcomment %}
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h3>{{depart.2.title|safe}}</h3>
+
+                            {{depart.2.description|safe}}
+                        {% comment %} <p>
+                            The Division provides various services for the healthy and orderly growth of Wind Energy
+                            Sector such as: Standardization works in Wind Energy Sector, provides the technical support to MNRE for
+                            the implementation of Revised List of Models and Manufacturers of wind turbines (RLMM).
+                        </p> {% endcomment %}
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card">
+                        <div class="icon-wrapper">
+                            <i class="fa fa-window-restore" aria-hidden="true"></i>
+                        </div>
+                        <h3>{{depart.3.title|safe}}</h3>
+
+                            {{depart.3.description|safe}}
+                        {% comment %} <p>The testing services offered by NIWE are accrediated by National Board for Testing and
+                            Calibration Laboratories (NABL) as per the requirement of ISO/IEC 17025. The division offer
+                            services such as Power performance measurement, Safety and function testing, Load
+                            measurements etc.,
+                        </p> {% endcomment %}
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-broom"></i>
+                        </div>
+                        <h3>{{depart.4.title|safe}}</h3>
+
+                            {{depart.4.description|safe}}
+                        {% comment %} <p>The Division identifies resource rich regions in the country by conducting wind resource
+                            micro survey and offers its services to the wind farm developers. To prepare wind map for
+                            the nation, it is assessing and analyzing wind resources.
+                        </p> {% endcomment %}
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card">
+                        <div class="icon-wrapper">
+                            <i class="fa fa-laptop" aria-hidden="true"></i>
+                        </div>
+                        
+                        <h3>{{depart.5.title|safe}}</h3>
+
+                            {{depart.5.description|safe}}
+                        {% comment %} <p>To serve as finest information centre in wind energy by collecting, collating and analyzing
+                            the related information. National and International training workshops are being organized
+                            regularly for the benefit of stakeholders.
+                        </p> {% endcomment %}
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <h3>{{depart.6.title|safe}}</h3>
+
+                            {{depart.6.description|safe}}
+                        {% comment %} <p>The Division shall carry out Administration, Finance, Purchase, Official Language, FC/GC,
+                            Parliamentary Committees, Transport Maintenance Contracts, Security,Legal and Estate
+                            Management
+                        </p> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+ 
+    <!-- footer -->
+
+    {% include 'footer.html' %}

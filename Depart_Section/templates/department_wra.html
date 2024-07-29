@@ -1,0 +1,937 @@
+{% include 'header.html' %}
+
+<!-- nav end  -->
+
+<section class="head-div">
+  <div class="overlay d-flex align-items-center">
+    <div class="container">
+      <h1 class="text-white">Wind Resource Assessment (WRA)</h1>
+    </div>
+  </div>
+</section>
+
+<section class="rnd-div">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                {{wra.0.title|safe}}
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                {{wra.0.description|safe}} {% comment %}
+                <p>
+                  The aim of National Institute of Wind Energy under its WRA
+                  division is to locate wind rich sites in the country through
+                  data analysis for the development of wind energy utilization.
+                  The data generated thus from all parts of the country is to be
+                  consolidated for the preparation of a National wind resource
+                  atlas. Apart from this the division is also involving into
+                  wind flow modelling, wind farm layout design,
+                  pre-constructional stage energy yield estimation, performance
+                  assessment and forecasting related activities using
+                  techniques, models and satellite information for the effective
+                  exploitation of wind energy. The division is also involved in
+                  activities related to the development of offshore wind power
+                  projects in the country by supporting in studies and surveys.
+                </p>
+                {% endcomment %}
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                {% comment %} {{wra.1.title|safe}} {% endcomment %}
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                {{wra.1.description|safe}} {% comment %}
+                <h5>
+                  The History of Wind Resource Assessment Programme in India
+                </h5>
+
+                <p>
+                  In order to identify wind farmable sites in the country, the
+                  Government of India launched a national wind resource
+                  assessment programme in 1985. The National Wind Resource
+                  Assessment Programme was designed for the selection of windy
+                  sites, procurement of suitable instruments, design and
+                  fabrication of 20 m tall masts, their installation at the
+                  selected sites and collection & processing of the data's.
+                  Nodal agency of each state also actively participated in the
+                  implementation of the programme. After the establishment of
+                  the National Institute of Wind Energy (formerly, C-WET) in
+                  Chennai, the National Wind Resource Assessment Programme has
+                  been transferred to NIWE and the activities of Field Research
+                  Unit of Indian Institute of Tropical Meteorology, Pune
+                  (FRU-IITM, Pune) was terminated. Since 2001 the National Wind
+                  Resource Assessment Programme is being executed by NIWE on
+                  behalf of MNRE. Under the programme, NIWE has commissioned
+                  50m, 80m, 100m and 120m height masts to collect dedicated wind
+                  resource data at multi-level.
+                </p>
+                <p>
+                  All the states and the major union territories are covered
+                  under this programme. More stations are being added every year
+                  so that more uncovered areas in states are studied
+                  scientifically. The data collected also serves as data bank
+                  for the preparation of national wind potential maps and other
+                  research purposes. Under the programme, cumulatively 915
+                  stations have been established as on November 2022. The
+                  Ministry is continuing this project through NIWE in
+                  association with State Nodal Agencies.
+                </p>
+                <p>
+                  As a part of the programme, in order to provide the authentic
+                  knowledge of the wind energy availability in a region of
+                  interest to the stakeholders, the Ministry decided to publish
+                  the data in a book form. Nine volumes of Wind Energy data
+                  books which provide extensive information of the sites where
+                  actual wind measurements carried out have been published so
+                  far.
+                </p>
+                <p>
+                  As a part of outcome of this study, wind power density maps
+                  have been prepared based on the measurements and meso-scale
+                  models. In 2005, the wind power potential for 10 states at 50m
+                  has been estimated with relevant assumptions. From the
+                  discrete values of WPD at individual locations, the wind power
+                  potential over an extended area of land have been estimated.
+                  In the year 2010, Indian wind atlas was prepared by NIWE with
+                  a combined effort from RISO-DTU, Denmark using much
+                  sophisticated meso-scale modelling technique called Karlsruhe
+                  Atmospheric Meso-scale Model (KAMM). Subsequently, in 2015
+                  NIWE has prepared the Indian Wind potential map 100m AGL
+                  (Above Ground Level) and recently the map has been upgraded to
+                  120m AGl to cope up with the increasing hub heights of the
+                  wind turbines.
+                </p>
+                {% endcomment %}
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                {{wra.2.title|safe}}
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                {{wra.2.description|safe}} {% comment %}
+                <ul>
+                  <li>Site Prospecting and Site Selection</li>
+                  <li>Verification of Wind Monitoring Procedure</li>
+                  <li>Long Term Trend Analysis</li>
+                  <li>Wind Flow Modelling</li>
+                  <li>Wind Farm Layout Design</li>
+                  <li>Bankable energy Yield Assessment & Due Diligence</li>
+                  <li>
+                    Detailed Project Report (DPR) preparation for wind farm
+                    developers
+                  </li>
+                  <li>Repowering & Intercropping studies</li>
+                  <li>Wind-Solar Hybrid layout design</li>
+                  <li>
+                    Tailor made training program on resource assessment to the
+                    industry
+                  </li>
+                  <li>RE projects</li>
+                  <li>Wind Power Forecasting</li>
+                  <li>Solar Power Forecasting</li>
+                </ul>
+
+                <p>
+                  Under take consultancy services on wind resources assessment,
+                  micro survey of wind resources, micro sitting and Detailed
+                  Project Report (DPR) for wind farm developments.
+                </p>
+                {% endcomment %}
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingfour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsefour"
+                aria-expanded="false"
+                aria-controls="collapsefour"
+              >
+                {{wra.3.title|safe}}
+              </button>
+            </h2>
+            <div
+              id="collapsefour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingfour"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                {{wra.3.description|safe}} {% comment %}
+                <ul>
+                  <li>
+                    Monitored wind speed & direction at 915 sites in the
+                    country.
+                  </li>
+                  <li>
+                    Five numbers of 120m tall masts with multilevel instruments
+                    were commissioned at five major wind farm locations in the
+                    country to assess the wind shear as well as to act as
+                    reference stations [1. Akal/Jaisalmer in Rajasthan, 2.
+                    Lamba/ Jamnagar in Gujarat, 3. Jagmin/ Satara in
+                    Maharashtra, 4. Jogimatti/Chitradurga in Karnataka, 5.
+                    Kayathar/Tuticorin in Tamil Nadu]
+                  </li>
+                  <li>
+                    Published Wind Energy Resource Survey Vol. V to IX
+                    containing wind data of 226 wind monitoring stations across
+                    the country.
+                  </li>
+                  <li>
+                    Conducted Micrositing / due diligence for more than 8500 MW
+                    (total) wind farms in the Country.
+                  </li>
+                  <li>
+                    About 1000 Nos. of Private Wind Monitoring Stations have
+                    been vetted.
+                  </li>
+                  <li>
+                    Indian Wind Potential Map at 50m, 80m, 100m and 120m has
+                    been prepared and published.
+                  </li>
+                  <li>
+                    Development of Online registry / Geotagging of wind turbines
+                    installed in the country
+                  </li>
+                  <li>
+                    Initiated first LiDAR based wind resource assessment at Gulf
+                    of Khambhat
+                  </li>
+                  <li>
+                    Awarded with the Skoch Order-of-Merit award for the project
+                    “Wind Power Forecasting by NIWE - Vortex”
+                  </li>
+                  <li>
+                    Received National Award for eGovernance 2018-19 (Golden
+                    Award under “Outstanding research on citizen centric
+                    Services by Academic Research Institutions”) for the project
+                    “Wind power forecasting for the whole state of Tamil Nadu”
+                    during the ceremony of National Award for eGovernance
+                  </li>
+                  <li>
+                    Developed In-house Data management system, Indigenous Wind
+                    and Solar Power Forecasting model, Monitoring System, Web
+                    portal, forecast simulation tools and security system
+                  </li>
+                </ul>
+                {% endcomment %}
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingfive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsefive"
+                aria-expanded="false"
+                aria-controls="collapsefive"
+              >
+                {{ wra.4.title|safe }}
+              </button>
+            </h2>
+            <div
+              id="collapsefive"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingfive"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                {{ wra.4.description|safe }}
+
+                <div class="row mt-3">
+                  {% for image in wra.4.images.all %}
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img
+                        src="{{ image.image.url }}"
+                        class="card-img-top"
+                        alt="Image"
+                      />
+                      <div class="card-body">
+                        <p class="card-text text-center">{{ image.title }}</p>
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingsix">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsesix"
+                aria-expanded="false"
+                aria-controls="collapsesix"
+              >
+                {{wra.5.title|safe}}
+              </button>
+            </h2>
+            <div
+              id="collapsesix"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingsix"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                {{wra.5.description|safe}} {% comment %}
+                <ul>
+                  <li>
+                    111 Solar Radiation Resource Assessment (SRRA) stations have
+                    been established in the country, one of the world's such
+                    biggest measurement programme under MNRE scheme.
+                  </li>
+                  <li>
+                    10 SRRA stations have been commissioned, 8 in Maharashtra
+                    and 2 in Kerala under SNA scheme.
+                  </li>
+                  <li>
+                    Four Advanced Measurement Stations (AMS) have been
+                    established in the country and these 4 stations are in the
+                    prestigious BSRN network, an arm of World Climate Research
+                    Program (WCRP) of WMO. India is the 2nd country in Asia
+                    after Japan with 4 such stations in this elite network.
+                  </li>
+                  <li>
+                    Based on the measured SRRA data from the field stations in
+                    conjunction with high resolution satellite data, the Indian
+                    Solar Radiation Atlas was developed. The atlas gives any
+                    solar stake holder, the solar resources at any point in the
+                    country along with annual energy production (AEP) from solar
+                    power plant for that location.
+                  </li>
+                  <li>
+                    Established calibration laboratory at par with International
+                    standard for solar sensors at NIWE-Chennai.
+                  </li>
+                </ul>
+                {% endcomment %}
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingseven">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseseven"
+                aria-expanded="false"
+                aria-controls="collapseseven"
+              >
+                {{wra.6.title|safe}} {% comment %} New Initiatives {% endcomment
+                %}
+              </button>
+            </h2>
+            <div
+              id="collapseseven"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingseven"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <h5>Preparation of 150 m Wind Potential Map</h5>
+                <ul>
+                  <li>
+                    Reliable background information on the availability of
+                    renewable resource and its geographical variation will play
+                    a major role in achieving the government's ambitious
+                    targets. As the wind speed increases with respect to height,
+                    the hub height extension is being looked into one of the
+                    effective solutions to enhance the energy yield from the
+                    wind turbines. With the technical advancements, the modern
+                    day turbines have reached the hub height upto 140m and a
+                    further enhancement in hub height is foreseen, which would
+                    require higher height maps.
+                  </li>
+                  <li>
+                    NIWE proposes to prepare indicative wind map at 150m through
+                    advanced numerical meso-scale modeling techniques and
+                    validate the maps with in-situ ground measurements to move
+                    towards achieving the ambitious goals as envisaged by the
+                    government.
+                  </li>
+                </ul>
+
+                <h5>Met-ocean Measurements</h5>
+
+                <p>
+                  Under this project NIWE proposes to carry out extensive LiDAR
+                  based offshore wind resource assessment off the Gujarat coast
+                  and Tamil Nadu coasts. In addition to this, NIWE proposes to
+                  carry out the Oceanographic / Hydrographic measurements, in
+                  and around the LiDAR platforms or suitable locations off the
+                  Gujarat coast and Tamil Nadu coast to understand the sea-state
+                  conditions, which are envisaged as equally essential and
+                  necessary to design the foundation of the Offshore wind
+                  turbines, to plan for Installation & other survey activities,
+                  and to understand the Weather Window for Operation and
+                  Maintenance planning. These simultaneous measurements will
+                  help to quantify the wind potential and understand sea-state
+                  in a fast-track manner, for effective demarcation of the
+                  offshore wind energy blocks.
+                </p>
+                <p>
+                  In Tamil Nadu, three locations at zone B1, Zone C1 & Zone E2
+                  have been identified and the clearance process has been
+                  completed.
+                </p>
+                <h5>
+                  Integrated Wind and Solar Resource Assessment through Mapping
+                  and Measurements
+                </h5>
+                <p>
+                  Reliable background information on the availability of
+                  renewable resource and its geographical variation will play a
+                  major role in achieving the government's ambitious targets. As
+                  the wind speed increases with respect to height, the hub
+                  height extension is being looked into one of the effective
+                  solutions to enhance the energy yield from the wind turbines.
+                  With the technical advancements, the modern day turbines have
+                  reached the hub height of 120m to 130m and a further
+                  enhancement in hub height is foreseen, which would require
+                  higher height maps. Studies have also revealed that solar and
+                  winds are almost complementary to each other.
+                </p>
+                <p>
+                  Hybridization of these two technologies would help in
+                  minimizing the variability apart from optimally utilizing the
+                  infrastructure including land & transmission system and a
+                  Hybrid potential map in this regard would be very much helpful
+                  for the stakeholders to identify suitable sites for further
+                  investigation. NIWE proposes to prepare indicative Renewable
+                  Energy potential maps (wind maps at 120m & 150m and Hybrid
+                  maps) through advanced numerical meso-scale modeling
+                  techniques and validate the maps with Integrated wind and
+                  solar masts and remote sensing in-situ ground measurements to
+                  move towards achieving the ambitious goals as envisaged by the
+                  government.
+                </p>
+
+                <h5>Preparation of 120 m Wind Potential Map</h5>
+                <p>
+                  To cope up with the ever increasing hub height of the wind
+                  turbine, NIWE has taken a new initiative to prepare the 120 m
+                  wind potential map.
+                </p>
+
+                <ul>
+                  <h6>1. Training</h6>
+                  <p>
+                    Forecasting Team Capacity, building process was initiated by
+                    Over speed, GmbH in collaboration with NIWE in August 2017.
+                    Fine tuning of prototype solar power forecasting model is
+                    under progress.
+                  </p>
+                  <h6>2. Workshops</h6>
+
+                  <li>
+                    NIWE and IWPA conducted a 3 day workshop on “Forecasting and
+                    Scheduling Wind Power” from 8th - 10th February 2016 in
+                    Radisson Blue Hotel, Chennai.
+                  </li>
+
+                  <img
+                    src="/statics/images/Forecasting_and_Scheduling_Wind_Power-Workshop.png"
+                    alt=""
+                    class="w-100 mt-3 pb-3"
+                  />
+
+                  <li>
+                    NIWE and IWPA conducted international workshop on “Current
+                    Practices in wind solar forecasting and 99+ grid
+                    availability for RE integration” on January 22nd and 23rd
+                    2018 at Le Royal meridian, Chennai.
+                  </li>
+
+                  <div class="row pb-3">
+                    <div class="col-md-6">
+                      <img
+                        src="/statics/images/IWPA_workshop1.png"
+                        alt=""
+                        class="w-100 mt-3"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <img
+                        src="/statics/images/IWPA_workshop2.png"
+                        alt=""
+                        class="w-100 mt-3"
+                      />
+                    </div>
+                  </div>
+
+                  <h5>3. Facilities/Events</h5>
+
+                  <li>
+                    Established Data management centre and Data analytics
+                    laboratory
+                  </li>
+                  <li>
+                    Established Centre for Excellence in VG Power Forecasting
+                    Facility at NIWE
+                  </li>
+                  <li>
+                    Conducted International Conference on “Wind and Solar
+                    Resource Assessment” on 6th & 7th Dec.2019.
+                  </li>
+                  <li>
+                    Carrying out continuous R&D to improve the existing wind
+                    power forecasting model accuracy
+                  </li>
+
+                  <h6 class="pt-2">Snapshots of forecasting portal:</h6>
+
+                  <div class="row mt-3">
+                    <div class="col-md-12">
+                      <div class="card">
+                        <img
+                          src="/statics/images/forecast1.png"
+                          class="card-img-top"
+                          alt="Sunset Over the Sea"
+                        />
+                        <div class="card-body">
+                          <p class="card-text text-center">
+                            Day ahead Schedule of Wind power Forecasting
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="card mt-4">
+                        <img
+                          src="/statics/images/forecast2.png"
+                          class="card-img-top"
+                          alt="Sunset Over the Sea"
+                        />
+                        <div class="card-body">
+                          <p class="card-text text-center">
+                            Week ahead Schedule of Solar power Forecasting
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingeight">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseeight"
+                aria-expanded="false"
+                aria-controls="collapseeight"
+              >
+                {{wra.7.title|safe}}
+              </button>
+            </h2>
+            <div
+              id="collapseeight"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingeight"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                {{wra.7.description|safe}} {% comment %}
+                <ul>
+                  <p>
+                    NIWE has developed state of art in house developed
+                    wind/solar power forecasting system to predict wind/solar
+                    power upto 7 day-ahead and also provide intraday revisions
+                    to support all the State load despatch Centre (SLDC) in the
+                    country to evacuate wind /solar power and also to manage
+                    grid efficiently.
+                  </p>
+                </ul>
+                {% endcomment %}
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingNine">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseNine"
+                aria-expanded="false"
+                aria-controls="collapseNine"
+              >
+                {{wra.8.title}}
+              </button>
+            </h2>
+            <div
+              id="collapseNine"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingNine"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                {{wra.8.description|safe}} {% comment %}
+                <ul>
+                  <p>
+                    Variable generation (VG) forecasting service plays an
+                    important role in grid management activities of State Load
+                    Dispatch Centre (SLDC). In order to utilize the maximum of
+                    renewable resources and to increase penetration and
+                    evacuation of wind power generation, a demo 51 MW wind
+                    power-forecasting project was initiated during 2013 in
+                    association with M/s Vortex Spain through an Indo-Spanish
+                    research collaboration facilitated by MNRE, Government of
+                    India. As a spinoff of the said project, NIWE initiated
+                    operational wind power forecasting services to Tamil Nadu
+                    since 2015. Subsequently, with the help of Indian NWP data
+                    set, an Indigenous wind power-forecasting model was
+                    developed by NIWE during 2017. Under Centre for Excellence
+                    in VG power forecasting project, NIWE carried out pilot
+                    operational wind power forecasting services for the whole
+                    state of Gujarat, Karnataka, SRLDC and Maharashtra. NIWE
+                    also initiated pilot operational solar power forecasting
+                    services to SRLDC. Based on the pilot project experience,
+                    NIWE has finetuned its wind and solar power forecasting
+                    model. The NIWE forecasting service would assist State
+                    -owned electricity generation and distribution utilities for
+                    better management of fluctuations in wind power/Solar power
+                    output.
+                  </p>
+                </ul>
+                {% endcomment %}
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTen">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTen"
+                aria-expanded="false"
+                aria-controls="collapseTen"
+              >
+                {{wra.9.title|safe}}
+              </button>
+            </h2>
+            <div
+              id="collapseTen"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTen"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <h6>
+                    MoU signing with various SLDC's for pilot wind/solar power
+                    forecasting services
+                  </h6>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <img
+                        src="{{imgObj.0.image.url}}"
+                        alt=""
+                        class="w-100 mt-3 pb-3"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <img
+                        src="{{imgObj.1.image.url}}"
+                        alt=""
+                        class="w-100 mt-3 pb-3"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <img
+                        src="{{imgObj.2.image.url}}"
+                        alt=""
+                        class="w-100 mt-3 pb-3"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <img
+                        src="{{imgObj.3.image.url}}"
+                        alt=""
+                        class="w-100 mt-3 pb-3"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <h6>National e-governance Award</h6>
+                      <img
+                        src="{{imgObj.4.image.url}}"
+                        alt=""
+                        class="w-100 mt-3 pb-3"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <h6>IWPA Review Meeting</h6>
+                      <img
+                        src="{{imgObj.5.image.url}}"
+                        alt=""
+                        class="w-100 mt-3 pb-3"
+                      />
+                    </div>
+
+                    <div class="col-md-12">
+                      <h6>
+                        Celebration of Cyber Jaagrookta Diwas (CJD) on 6th Oct
+                        2022
+                      </h6>
+                      <img
+                        src="{{imgObj.6.image.url}}"
+                        alt=""
+                        class="w-100 mt-3 pb-3"
+                      />
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headinge11">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsee11"
+                aria-expanded="false"
+                aria-controls="collapsee11"
+              >
+                {{wra.10.title|safe}}
+              </button>
+            </h2>
+            <div
+              id="collapsee11"
+              class="accordion-collapse collapse"
+              aria-labelledby="headinge11"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                {{wra.10.description|safe}} {% comment %}
+                <p>
+                  Developed an Indigenous solar power forecasting model for the
+                  country with the technical support of GIZ, New Delhi in 2019.
+                </p>
+
+                <li>Concept</li>
+                <p>
+                  A concept feasibility study on Virtual Power Plant (VPP) in
+                  India in association with GIZ GmbH, New Delhi, Fraunhofer
+                  IWES, Germany and ICF International has been initiated.
+                  Virtual Power Plant is a network of decentralized,
+                  medium-scale power generating units such as, wind farms,
+                  biomass and solar parks as well as flexible power consumers
+                  and batteries. The sources are often a cluster of distributed
+                  generation systems, and are often orchestrated by a central
+                  authority
+                </p>
+                {% endcomment %}
+                <ul>
+                  <div class="row">
+                    {% for image in wra.10.images.all %}
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img
+                          src="{{image.image.url}}"
+                          class="card-img-top"
+                          alt="Sunset Over the Sea"
+                        />
+                        <div class="card-body">
+                          <p class="card-text text-center">{{image.title}}</p>
+                        </div>
+                      </div>
+                    </div>
+                    {% endfor %} {% comment %}
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img
+                          src="/statics/images/2.jpg"
+                          class="card-img-top"
+                          alt="Sunset Over the Sea"
+                        />
+                        <div class="card-body">
+                          <p class="card-text text-center">Atlas DNI</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img
+                          src="/statics/images/3.jpg"
+                          class="card-img-top"
+                          alt="Sunset Over the Sea"
+                        />
+                        <div class="card-body">
+                          <p class="card-text text-center">Atlas GHI</p>
+                        </div>
+                      </div>
+                    </div>
+                    {% endcomment %}
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading12">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse12"
+                aria-expanded="false"
+                aria-controls="collapse12"
+              >
+                {{wra.11.title|safe}}
+              </button>
+            </h2>
+            <div
+              id="collapse12"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading12"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                {{wra.11.description|safe}} {% comment %}
+                <ul>
+                  <li>
+                    Amendment in the 'Guidelines for Offshore Wind Power
+                    Assessment Studies and Surveys'
+                  </li>
+                  <li>Strategy paper for development of Offshore wind power</li>
+                  <li>
+                    Rapid Marine Environmental Impact Assessment of the proposed
+                    Offshore Wind Farm in Gulf of Khambhat- off Jafrabad,
+                    Gujarat (EIA Report
+                  </li>
+                  <li>
+                    Offshore LiDAR raw data (*.STA & *.RTD files) at Gulf of
+                    Khambhat off Gujarat coast from December 2017 to November
+                    2019
+                  </li>
+                  <li>India's Wind Potential Atlas at 120m agl</li>
+                  <li>First offshore Lidar wind data analysis report</li>
+                  <li>
+                    Time series data (Lidar) for the period of November 2017 to
+                    2018
+                  </li>
+                  <li>Offshore Wind Profile Measurement at Dhanushkodi</li>
+                  <li>
+                    Guidelines for Offshore wind Power Assessment Studies and
+                    Surveys
+                  </li>
+                  <li>Wind-Solar Hybrid Energy Production Analysis Report</li>
+                  <li>GIS Report</li>
+                  <li>WPD Map</li>
+                  <li>Micrositing Guidelines</li>
+                  <li>
+                    Guidelines for Wind Measurement by Private Sector and
+                    subsequent development.
+                  </li>
+                  <li>
+                    In exercise of the powers conferred by Article 297 of the
+                    Constitution read with Transaction of Business Rules and
+                    approval of the Cabinet dated 09th September, 2015, the
+                    Ministry of New and Renewable Energy hereby notifies the
+                    National Offshore Wind Energy Policy with effect from the
+                    date of publication of the Policy in the Official Gazette.-
+                    Issue Date October 07, 2015
+                  </li>
+                  <li>India's Wind Potential Atlas at 120m agl</li>
+                  <li>
+                    Wind / Solar Resource Assessment studies in Leh Ladakh UT
+                  </li>
+                  <li>
+                    Calibration of solar instruments under commercial mode
+                  </li>
+                  <li>Calibration requisition form</li>
+                </ul>
+                <p>Procedure for purchasing the Time Series Wind/Solar Data</p>
+                {% endcomment %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">{% include "depart-side-tabs.html" %}</div>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+
+{% include 'footer.html' %}

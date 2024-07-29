@@ -1,0 +1,233 @@
+{% include 'header.html' %}
+
+<!-- nav end  -->
+
+<section class="head-div">
+    <div class="overlay d-flex align-items-center">
+        <div class="container">
+            <h1 class="text-white">Awards</h1>
+        </div>
+    </div>
+
+</section>
+
+<section class="main-div">
+    <div class="container">
+        <!--SESI awards row-->
+        {% comment %} {% for data in award %} {% endcomment %}
+        <div class="row col-12 mx-auto">
+            <div class="col-md-12">
+               <div class="grd-box">
+                  <div class="head1">
+                    <h4>{{award.0.title|safe}}</h4>
+                    {% comment %} <h4>SESI (Solar Energy Society of India) Award to Centre of Excellence</h4> {% endcomment %}
+                  </div>
+                    {{award.0.description|safe}}
+                    {% comment %} <p>Centre for Wind Energy Technology has been awarded the “SESI Special Award to Centre of Excellence” by the Solar Energy Society of India.
+                         Shri. Vilas Muttemwar, Honorable Minister of State, (Independent Charge), MNRE, Government of India, conferred the award on C-WET during
+                          inauguration of ICORE-2006 on 08th February 2006 held in the Hyderabad International Convention Centre, Hyderabad.
+                    </p> {% endcomment %}
+               </div>
+               
+            </div>
+            <div class="container row col-12 mt-5 mx-auto " >
+               <div class="col-lg-4 col-md-8 col-sm-12 mx-auto text-center awrd-img"> 
+                 <img src="/media/{{ award.0.image_1 }}" class="img-fluid " alt="Wind Energry">
+               </div>
+            </div>
+        </div><!--div close for row-->
+        <!--Special Institution Awards row-->
+         <div class="row col-12 mx-auto mt-5">
+            <div class="col-md-12">
+               <div class="grd-box">
+                  <div class="head1">
+                    <h4>{{award.1.title|safe}}
+                    {% comment %} <h4>Special InstitutionRecognition Award by Wind India</h4> {% endcomment %}
+                  </div>
+                        {{award.1.description|safe}}
+                    {% comment %} <p>CWET has been awarded the “Special Institution Recognition Award” by the Wind India – 2008, An International Conference and Exhibition 
+                        held at Chennai Trade Centre, Chennai organized by World Institute for Sustainable Energy (WISE), Pune. The Awards Ceremony was held on
+                         25th November 2008 at Chennai Trade Centre, Chennai.
+                    </p> {% endcomment %}
+               </div>
+               
+            </div>
+
+            <div class="container row col-12 mx-auto d-flex justify-content-center">
+                <div class="col-lg-5 col-md-6 col-sm-12  mt-5 text-center awrd-img">
+                    <img src="/media/{{award.1.image_1}}" class="img-fluid" alt="Wind Energry">
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12  mt-5 text-center awrd-img">
+                    <img src="/media/{{award.1.image_2}}" class="img-fluid " alt="Wind Energry">
+                </div>
+            </div>
+
+        </div><!--div close for row-->
+
+
+        <!--Best Stall Awards row-->
+        <div class="row col-12 mx-auto mt-5">
+            <div class="col-md-12">
+               <div class="grd-box">
+                  <div class="head1">
+                    <h4>{{award.2.title|safe}}</h4>
+                    {% comment %} <h4>Best Stall Award in 102nd Indian Science Congress “Science & Technology for Human Development”</h4> {% endcomment %}
+                  </div>
+                        {{award.2.description|safe}}
+                    {% comment %} <p>NIWE participated in the 102nd Indian Science Congress 'Pride of India 2015' Exhibition organized by Indian Science Congress Association at Mumbai University,
+                       Mumbai during 3rd to 7th January 2015. NIWE Stall has been awarded as “Best Stall design”.Mr. P Kanagavel, Additional Director & Head - ITCS receiving “Best Stall design Award” from the organizer.
+                    </p> {% endcomment %}
+               </div>
+            </div>
+            <div class="container row col-12 mx-auto d-flex justify-content-center">
+                <div class="col-lg-5 col-md-6 col-sm-12  mt-5 text-center awrd-img">
+                    <img src="/media/{{award.2.image_1}}" class="img-fluid" alt="Wind Energry">
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12  mt-5 text-center awrd-img">
+                    <img src="/media/{{award.2.image_2}}" class="img-fluid " alt="Wind Energry">
+                </div>
+            </div>
+        </div><!--div close for the row-->
+
+
+        <!--BID AWARD GENEVA  row-->
+        <div class="row col-12 mx-auto mt-5">
+            <div class="col-md-12">
+               <div class="grd-box">
+                  <div class="head1">
+                        <h4>{{award.3.title|safe}}</h4>
+                    {% comment %} <h4>BID AWARD GENEVA 2015 GOLD CATEGORY FOR INTERNATIONAL QUALITY</h4> {% endcomment %}
+                  </div>
+                            {{award.3.description|safe}}
+                    {% comment %} <p>NIWE received Bid Award Geneva 2015 Gold Category for International Quality at Geneva, Switzerland held during 21st to 22nd March 2015.
+                         The objective of the ceremony is to recognize the prestige of outstanding companies, organizations and entrepreneurs.
+                    </p> {% endcomment %}
+               </div>
+            </div>
+            <div class="container row col-12 mx-auto  d-flex justify-content-center">
+                <div class="col-lg-5 col-md-6 col-sm-12  mt-5 text-center awrd-img">
+                    <img src="/media/{{award.3.image_1}}" class="img-fluid" alt="Wind Energry">
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12  mt-5 text-center awrd-img">
+                    <img src="/media/{{award.3.image_2}}" class="img-fluid " alt="Wind Energry">
+                </div>
+            </div>
+        </div><!--div close for the row-->
+
+
+        <!--Skoch Order-of-Merit Award  row-->
+        <div class="row col-12 mx-auto mt-5">
+            <div class="col-md-12">
+               <div class="grd-box">
+                  <div class="head1">
+                        <h4> {{award.4.title|safe}}</h4>
+                    {% comment %} <h4>Skoch Order-of-Merit Award</h4> {% endcomment %}
+                  </div>
+                        {{award.4.description|safe}}
+                    {% comment %} <p>Skoch Order-of-Merit was awarded for the project “Wind Power Forecasting by NIWE - Vortex” during the 42nd Skoch summit on 10th- 11th 
+                        December 2015 at India Habitat Center, New Delhi.
+                    </p> {% endcomment %}
+               </div>
+            </div>
+            <div class="container row col-12 mx-auto  d-flex justify-content-center">
+                <div class="col-lg-5 col-md-6 col-sm-12 mt-5 text-center awrd-img">
+                    <img src="/media/{{award.4.image_1}}" class="img-fluid" alt="Wind Energry">
+                </div>
+            </div>
+        </div><!--div close for the row-->
+
+        <!-- Vijayavani National Educational Leadership Award  row-->
+        <div class="row col-12 mx-auto mt-5">
+            <div class="col-md-12">
+               <div class="grd-box">
+                  <div class="head1">
+                       <h4>{{award.5.title|safe}}</h4> 
+                    {% comment %} <h4> Vijayavani National Educational Leadership Award</h4> {% endcomment %}
+                  </div>
+                           {{award.5.description|safe}}
+                    {% comment %} <p>NIWE has been awarded “Education Leadership Award” by Vijayavani, Karnataka's largest circulated Kannada daily.
+                         The award is in recognition of leadership, development, marketing an institute and industry interface of an Educational Institute. 
+                         Vijayavani National Education Leadership Awards function held on 12th September 2015 at Vivanta by Taj, Yeshwantpur, Bangalore. 
+                         Mr. P Kanagavel, Additional Director & Head, ITCS receiving the Award on behalf of NIWE.
+                    </p> {% endcomment %}
+               </div>
+            </div>
+            <div class="container row col-12 mx-auto  d-flex justify-content-center">
+                <div class="col-lg-4 col-md-5 col-sm-6 col-6 mt-5 text-center awrd-img">
+                    <img src="/media/{{award.5.image_1}}" class="img-fluid" alt="Wind Energry">
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-6 col-6 mt-5 text-center awrd-img">
+                    <img src="/media/{{award.5.image_2}}" class="img-fluid" alt="Wind Energry">
+                </div>
+            </div>
+        </div><!--div close for the row-->
+
+
+        <!--Africa Education Leadership Award row-->
+        <div class="row col-12 mx-auto mt-5">
+            <div class="col-md-12">
+               <div class="grd-box">
+                  <div class="head1">
+                      <h4>{{award.6.title|safe}}</h4>
+                    {% comment %} <h4>Africa Education Leadership Award</h4> {% endcomment %}
+                  </div>
+                          {{award.6.description|safe}}
+                    {% comment %} <p>
+                        NIWE has been awarded "Africa Education Leadership Award" by World CSR Day & World Sustainability held on 9th December 2015 at Le Meridien, Mauritius.
+                    </p> {% endcomment %}
+               </div>
+            </div>
+            <div class="container row col-12 mx-auto  d-flex justify-content-center">
+                <div class="col-lg-4 col-md-5 col-sm-6 col-6 mt-5 text-center awrd-img">
+                    <img src="/media/{{award.6.image_1}}" class="img-fluid" alt="Wind Energry">
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-6 col-6 mt-5 text-center awrd-img">
+                    <img src="/media/{{award.6.image_2}}" class="img-fluid" alt="Wind Energry">
+                </div>
+            </div>
+        </div><!--div close for the row-->
+
+
+        <!--Education Leadership Award - NIWE row-->
+        <div class="row col-12 mx-auto mt-5">
+            <div class="col-md-12">
+               <div class="grd-box">
+                  <div class="head1">
+                     <h4>{{award.7.title|safe}}</h4>
+                    {% comment %} <h4>Education Leadership Award - NIWE</h4> {% endcomment %}
+                  </div>
+                         {{award.7.description|safe}}
+                    {% comment %} <p>
+                    NIWE has been awarded “Education Leadership Award” in the ABP News National Education Awards held on 23rd June 2016 in the World Education Congress 
+                    at Mumbai in recognition of leadership, development, marketing an institute and industry interface of an Educational Institute.
+                    </p> {% endcomment %}
+
+                  <div class="head1">
+                     <h4>{{award.8.title|safe}}</h4>
+                    {% comment %} <h4>National eGovernance Award 2018-19</h4> {% endcomment %}
+                  </div>
+                         {{award.8.description|safe}}
+                  {% comment %} <p>
+                  National Institute of Wind Energy has been awarded the “National eGovernance Award 2018-19” (Golden Award under “Outstanding research on citizen 
+                  centric Services by Academic Research Institutions”) for the project “Wind power forecasting for the whole state of Tamil Nadu” by the Department 
+                  of Administrative Reforms & Public Grievances, Government of India
+                  </p> {% endcomment %}
+               </div>
+            </div>
+            <div class="container row col-12 mx-auto  d-flex justify-content-center">
+                <div class="col-lg-5 col-md-5 col-sm-12 mt-5 text-center awrd-img d-flex align-items-center">
+                    <img src="/media/{{award.8.image_1}}" class="img-fluid" alt="Wind Energry">
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-12 mt-5 text-center awrd-img">
+                    <img src="/media/{{award.8.image_2}}" class="img-fluid" alt="Wind Energry">
+                </div>
+            </div>
+        </div><!--div close for the row-->
+        
+        
+    </div><!--div close for the main container-->
+</section>
+
+<!-- footer -->
+
+{% include 'footer.html' %}

@@ -1,0 +1,64 @@
+
+{% include 'header.html' %}
+
+    <!-- nav end  -->
+
+    <section class="head-div">
+        <div class="overlay d-flex align-items-center">
+            <div class="container">
+                <h1 class="text-white">Background</h1>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="dgm-div">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-4">
+                    {% include 'aboutsidenav.html' %} 
+                </div>
+                <div class="col-md-8">
+                    <div class="dgm-text">
+                      
+                        {% for data in background %}
+                        
+                           <p> {{data.description|safe}}  </p>
+
+                        {% endfor %}
+                        {% comment %} <p>Harnessing wind energy has come a long way in India, on par with international development,
+                            with the private sector actively participating in the path laid down by Ministry of New and
+                            Renewable Energy (MNRE) over the last decade. The policy formulated for the development of
+                            wind power by MNRE supported by the State Policies, including the evacuation of power
+                            through the State Electricity Boards, has placed India on the world wind energy map.</p>
+                        <p>To sustain wind energy development and to help India achieve self-reliance in the power
+                            sector supplementing the core conventional resources, MNRE has been planning and developing
+                            the basic infrastructure, institutions, and resources for carrying out research and
+                            development, large scale demonstration and diffusion of the non-conventional energy
+                            sources.</p>
+                        <p>As a step towards achieving these broad goals and to tackle the challenges in sustaining the
+                            development and accelerating the pace of utilization of wind energy in the country the
+                            National Institute of Wind Energy (NIWE) has been established by MNRE at Chennai as an
+                            autonomous R&D institution of Government of India.</p>
+                        <p>A Wind Turbine Test Station with technical and partial financial support by Danida,
+                            Government of Denmark, has been established at Kayathar, in Thoothukudi District, Tamil
+                            Nadu, as an integral part of the Institute.</p>
+                        <p>It is envisioned that NIWE will serve as a technical focal point of excellence to foster the
+                            development of wind energy in the country.</p> {% endcomment %}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+ 
+    <!-- footer -->
+
+    {% include 'footer.html' %}

@@ -1,0 +1,50 @@
+{% include 'header.html' %}
+
+    <section class="head-div">
+        <div class="overlay d-flex align-items-center">
+            <div class="container">
+                <h1 class="text-white">Organizational Structure</h1>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="dgm-div">
+        <div class="container">
+            <div class="row">
+
+            <div class="col-md-4">
+                {% include 'aboutsidenav.html' %}
+                </div>
+                <div class="col-md-8">
+                         
+                        {% for data in org %}
+                         
+                        <p>{{ data.description|safe }}</p>
+                        {% comment %} <p>National institute of wind energy is an autonomous R&D institution established by the
+                            Ministry of New and Renewable Energy (MNRE), Government of India in 1999 to serve as a
+                            technical focal point of excellence to foster the development of wind energy in the country.
+                            The Governing Council (GC) with 12 members is the policy making body of the institution and
+                            Secretary, MNRE is the ex-officio Chairman of the GC. The Director General is the head of
+                            the institution and the Division Heads assists him.
+                        </p> {% endcomment %}
+
+                    <div class="dgm-text text-center">
+                        <img src="{{ data.image.url }}" alt="" class="w-100" >
+
+                        <h5 class="text-center">Organizational Structure</h5>
+
+                        <a href="#" >Click here to view Division wise staff profile details</a>
+                    </div>
+
+                        {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+
+    {% include 'footer.html' %}

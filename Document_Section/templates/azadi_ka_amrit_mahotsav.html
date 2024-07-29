@@ -1,0 +1,82 @@
+{% include 'header.html' %}
+
+<!-- nav end  -->
+
+<section class="head-div">
+    <div class="overlay d-flex align-items-center">
+        <div class="container">
+            <h1 class="text-white">Azadi ka Amrit Mahotsav to commemorate the 75 years of India's Independence</h1>
+        </div>
+    </div>
+
+</section>
+
+<section class="main-div py-5 header">
+    <div class="container py-1">
+        <div class="row col-12 mx-auto">
+
+            <div class="col-md-9 mt-4 order-lg-1 order-2">
+
+
+
+                <div class="tab-content" id="v-pills-tabContent"><!--left side tab content-area -->
+
+                    <div class="tab-pane fade rounded bg-white show  active" id="wind-energy" role="tabpanel"
+                        aria-labelledby="wind-energy">
+
+                        <div class="row col-12 mx-auto px-0">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                <a href="{% url 'amrit_mahotsav_22_23' %}">
+                                    <div class="card sm-card-design text-center px-3 py-4">
+                                        <h6>{{report.0.Year_of_Report}}</h6>
+                                        <h5>AKAM</h5>
+                                    </div>
+                                </a>                                                                                                         
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                <a href="{% url 'amrit_mahotsav_22_23' %}">
+                                    <div class="card sm-card-design text-center px-3 py-4">
+                                        <h6>{{report.1.Year_of_Report}}</h6>
+                                        <h5>AKAM</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><!--div close for row-->
+                    </div><!--div close for tab-pane-->
+
+
+
+
+                    <!-- Tabs content common tabs part-->
+
+                    {% include 'tab-academic.html'%}
+                    {% include 'tab-news.html'%}
+                    {% include 'tab-annual.html'%}
+                    {% include 'tab-library.html'%}
+                    {% include 'tab-workshop.html'%}
+                    {% include 'tab-skill.html'%}
+                    {% include 'tab-calender.html'%}
+                    {% include 'tab-skill.html'%}
+                    {% include 'tab-national.html'%}
+                    {% include 'tab-international.html'%}
+                    {% include 'tab-ITEC.html'%}
+                    {% include 'tab-customized.html'%}
+                    {% include 'tab-webinar.html'%}
+                    {% include 'tab-wind.html'%}
+                    {% include 'tab-short.html'%}
+                    {% include 'tab-wind-award.html'%}
+                    {% include 'tab-amrit.html'%}
+
+                </div><!--div close for tab content-->
+            </div><!--div close for col-md-9-->
+            <div class="col-md-3 mt-4 order-lg-2 order-1">
+                {% include 'side-tab.html'%}
+            </div><!--div close for col-md-3-->
+
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+
+{% include 'footer.html' %}

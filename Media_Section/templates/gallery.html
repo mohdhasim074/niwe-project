@@ -1,0 +1,129 @@
+{% include 'header.html' %}
+
+<!-- nav end  -->
+
+<section class="head-div">
+    <div class="overlay d-flex align-items-center">
+        <div class="container">
+            <h1 class="text-white">Gallery</h1>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="main-div">
+    <div class="container">
+         <div class="col-12 row mx-auto">
+           {% for data in gallery %}
+             <div class="col-lg-3 col-md-4 col-sm-6 col-6  mt-4">
+                 <a href="{% url 'sub-gallery' %}">
+                   <div class="card gallery-card p-0">
+                      <div class="card-body text-center p-2 gallery-img">
+                          <img src="/media/{{data.image}}"  alt="">
+                      </div>
+                      <div class="card-footer text-center txt-clr lh-sm gallery-cap">
+                        {{data.title}}
+                      </div>
+                    </div>
+                  </a>
+                </div>
+           {% endfor %}
+
+             {% comment %} <div class="col-lg-3 col-md-4 col-sm-6 col-6  mt-4">
+                 <a href="sub-gallery.html">
+                   <div class="card gallery-card p-0">
+                      <div class="card-body text-center p-2 gallery-img">
+                          <img src="/statics/images/one.jpg" alt="">
+                      </div>
+                      <div class="card-footer text-center txt-clr lh-sm gallery-cap">
+                        DEA Team visit to NIWE on 29th February, 2024
+                      </div>
+                   </div>
+                 </a>
+             </div>
+
+             <div class="col-lg-3 col-md-4 col-sm-6 col-6  mt-4">
+                 <a href="sub-gallery.html">
+                   <div class="card gallery-card p-0">
+                      <div class="card-body text-center p-2 gallery-img">
+                          <img src="/statics/images/one.jpg" alt="">
+                      </div>
+                      <div class="card-footer text-center txt-clr lh-sm gallery-cap">
+                        DEA Team visit to NIWE on 29th February, 2024
+                      </div>
+                   </div>
+                 </a>
+             </div>
+
+             <div class="col-lg-3 col-md-4 col-sm-6 col-6  mt-4">
+                 <a href="sub-gallery.html">
+                   <div class="card gallery-card p-0">
+                      <div class="card-body text-center p-2 gallery-img">
+                          <img src="/statics/images/one.jpg" alt="">
+                      </div>
+                      <div class="card-footer text-center txt-clr lh-sm gallery-cap">
+                        DEA Team visit to NIWE on 29th February, 2024
+                      </div>
+                   </div>
+                 </a>
+             </div>
+             <div class="col-lg-3 col-md-4 col-sm-6 col-6  mt-4">
+                 <a href="sub-gallery.html">
+                   <div class="card gallery-card p-0">
+                      <div class="card-body text-center p-2 gallery-img">
+                          <img src="/statics/images/one.jpg" alt="">
+                      </div>
+                      <div class="card-footer text-center txt-clr lh-sm gallery-cap">
+                        DEA Team visit to NIWE on 29th February, 2024
+                      </div>
+                   </div>
+                 </a>
+             </div>
+
+             <div class="col-lg-3 col-md-4 col-sm-6 col-6  mt-4">
+                 <a href="sub-gallery.html">
+                   <div class="card gallery-card p-0">
+                      <div class="card-body text-center p-2 gallery-img">
+                          <img src="/statics/images/one.jpg" alt="">
+                      </div>
+                      <div class="card-footer text-center txt-clr lh-sm gallery-cap">
+                        DEA Team visit to NIWE on 29th February, 2024
+                      </div>
+                   </div>
+                 </a>
+             </div>
+
+             <div class="col-lg-3 col-md-4 col-sm-6 col-6  mt-4">
+                 <a href="sub-gallery.html">
+                   <div class="card gallery-card p-0">
+                      <div class="card-body text-center p-2 gallery-img">
+                          <img src="/statics/images/one.jpg" alt="">
+                      </div>
+                      <div class="card-footer text-center txt-clr lh-sm gallery-cap">
+                        DEA Team visit to NIWE on 29th February, 2024
+                      </div>
+                   </div>
+                 </a>
+             </div>
+
+             <div class="col-lg-3 col-md-4 col-sm-6 col-6  mt-4">
+                 <a href="sub-gallery.html">
+                   <div class="card gallery-card p-0">
+                      <div class="card-body text-center p-2 gallery-img">
+                          <img src="/statics/images/one.jpg"alt="">
+                      </div>
+                      <div class="card-footer text-center txt-clr lh-sm gallery-cap">
+                        DEA Team visit to NIWE on 29th February, 2024
+                      </div>
+                   </div>
+                 </a>
+             </div> {% endcomment %}
+             
+         </div>
+    </div><!--div close for the main container-->
+</section>
+
+<!-- footer -->
+
+{% include 'footer.html' %}

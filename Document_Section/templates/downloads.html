@@ -1,0 +1,191 @@
+{% include 'header.html' %}
+
+    <!-- nav end  -->
+
+    <section class="head-div">
+        <div class="overlay d-flex align-items-center">
+            <div class="container">
+                <h1 class="text-white">Documents</h1>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="document-div">
+        <div class="container">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    {{documents.0.title|safe}}
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    {{documents.0.description|safe}}
+                {% comment %} <ul class="mt-3">
+                    <li>Industrial Research & Acadamic Interaction (IRAI) MoU <span>&nbsp; <a href="/statics/images/(IRAI)_MoU.pdf" style="color:red;font-size:20px"> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></span> &nbsp;<span> <a href="/statics/images/Industrial_Research_and_Academic_Interaction_(IRAI)_MoU (2).docx" style="font-size:20px"> <i class="fa fa-file-word-o" aria-hidden="true"></i></a></span></li>
+                    <li>NIWE being the model institution in the entire Asia-pacific accordingly to demonstrate the renewable energy technologies and also to conduct research relevant activities, the following facilities has been established</li>  
+                </ul>
+                <ol type="a" class="mt-3">
+                        <li> &nbsp;2 MW Variable speed wind turbine</li>
+                        <li> &nbsp;600 kW constant speed Wind Turbine</li>
+                        <li> &nbsp;200 kW constant speed wind turbines</li>
+                        <li> &nbsp;5 kW wind solar hybrid system   </li>
+                </ol> {% endcomment %}
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    {{documents.1.title|safe}}
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    {{documents.1.description|safe}}
+                    {% comment %} <ul class="wra-list">
+                        <li>Wind / Solar Resource Assessment studies in Leh Ladakh UT</li>
+                        <li>Evaluation of test site for Type testing</li>
+                        <li>Guidelines for Scheduling Activities for Type Testing</li>
+                        <li>DNV Certificate</li>
+                        <li>Certificate of Accreditation</li>
+                        <li>MNRE Call for R&D Proposal in thrust areas of Small Wind Energy Hybrid System</li>
+                        <li>Fourteenth List of Empanelment of Small Wind Turbines</li>
+                        <li>Guidelines on the technical requirement to be fulfilled by a small wind turbine manufacturer for empanelment with MNRE/NIWE</li>
+                        <li>Call for R&D Proposal in thrust areas of Small Wind Energy Hybrid System</li>
+                        <li>Calibration of solar instruments under commercial mode</li>
+                        <li>Calibration requisition form</li>
+                        <li>India's Wind Potential Atlas at 120m agl</li>
+                        <li>Time series data (Lidar) for the period of November 2017 to 2018</li>
+                        <li>First offshore Lidar wind data analysis report</li>
+                        <li>Guidelines for Offshore wind Power Assessment Studies and Surveys</li>
+                        <li>Wind-Solar Hybrid Energy Production Analysis Report</li>
+                        <li>Offshore Wind Profile Measurement at Dhanushkodi</li>
+                        <li>GIS Report</li>
+                        <li>WPD Map</li>
+                        <li>Micrositing Guidelines</li>
+                        <li>Guidelines for Wind Measurement by Private Sector and subsequent development.</li>
+                        <li>In exercise of the powers conferred by Article 297 of the Constitution read with Transaction of Business Rules and approval of the Cabinet dated 09th September, 2015, the Ministry of New and Renewable Energy hereby notifies the National Offshore Wind Energy Policy with effect from the date of publication of the Policy in the Official Gazette.- Issue Date October 07, 2015</li>
+                    </ul> {% endcomment %}
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    {{documents.2.title|safe}}
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        {{documents.2.description|safe}}
+                        {% comment %} <ul class="wra-list">
+                                <li>Strategy paper for development of Offshore wind power</li>
+                                <li>Rapid Marine Environmental Impact Assessment of the proposed Offshore Wind Farm in Gulf of Khambhat- off Jafrabad, Gujarat (EIA Report)</li>
+                                <li>Offshore LiDAR raw data (*.STA & *.RTD files) at Gulf of Khambhat off Gujarat coast from December 2017 to November 2019.</li>
+                            
+                            </ul> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    {{documents.3.title|safe}}
+                </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        {{documents.3.description|safe}}
+                        {% comment %} <ul class="wra-list">
+                                <li>Annual Reports</li>
+                                <li>Newsletters</li>
+                                <li>Syllabus for Master level Wind Energy Course</li>
+                            
+                            </ul> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    {{documents.4.title|safe}}
+                </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        {{documents.4.description|safe}}
+                        {% comment %} <ul class="wra-list">
+                                <li>NIWE's GST Registration Certificate</li>
+                                    <li>Notification Under Section 35 of the Income-tax Act</li>
+                                    <li>Service Tax Registration Certificate</li>
+                                    <li>DSIR recognized NIWE is Research Institution, for the purposes of availing Customs / Central Excise Duty Exemption</li>
+                                    <li>DSIR recognition of NIWE as a Scientific and Industrial Research Organisation(SIROs)</li>
+                            
+                            </ul> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    {{documents.5.title|safe}}
+                </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        {{documents.5.description|safe}}
+                      {% comment %} <h5>NIWE REMITTANCES</h5> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    {{documents.6.title|safe}}
+                </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        {{documents.6.description|safe}}
+                        {% comment %} <ul class="wra-list">
+
+                                <li>ANNEXURE - 1</li>
+                                <li>ANNEXURE - 2</li>
+                                <li>ANNEXURE - 3</li>
+                                <li>ANNEXURE - 4</li>
+                                <li>ANNEXURE - 5</li>
+                                <li>ANNEXURE - 6</li>
+                                <li>ANNEXURE - 7</li>
+                                <li>ANNEXURE - 8</li>
+                                <li>ANNEXURE - 9</li>
+                                <li>ANNEXURE - 10</li>
+                                <li>ANNEXURE - 11</li>
+                                <li>ANNEXURE - 12</li>
+                                <li>ANNEXURE - 13</li>
+                                <li>ANNEXURE - 14</li>
+                                <li>ANNEXURE - 15</li>
+                        </ul> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    {% include 'footer.html' %}

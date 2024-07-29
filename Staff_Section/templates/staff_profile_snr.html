@@ -1,0 +1,164 @@
+{% include 'header.html' %}
+
+<section class="head-div">
+  <div class="overlay d-flex align-items-center">
+    <div class="container">
+      <h1 class="text-white">Testing, Standards & Regulation</h1>
+    </div>
+  </div>
+</section>
+
+<section class="staff-dev">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-12">
+        <!-- sidenav bar -->
+        {% include 'sidenav.html' %}
+      </div>
+
+      <div class="col-md-8 col-12">
+        <div class="staff-table">
+          <div class="table-responsive">
+            <table
+              class="table table-bordered table-striped"
+              style="margin-top: 0px"
+            >
+              <thead class="table__head">
+                <tr>
+                  <th>
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    Name
+                  </th>
+                  <th>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> Contact
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="table__body">
+                {% for staff in snrStaff %} {% if not staff.department %}
+                <tr>
+                  <td>
+                    {{staff.name}}
+                    <br />
+                    {{staff.position}}
+                  </td>
+
+                  <td>
+                    <i class="fa fa-envelope" aria-hidden="true"></i
+                    >{{staff.email}} 0 <br />
+                    <i class="fa fa-phone" aria-hidden="true"></i
+                    >{{staff.phone_number}}
+                  </td>
+                </tr>
+                {% endif %} {% endfor %}
+
+                <tr class="text-center">
+                  {% comment %}
+                  <td colspan="2">Testing</td>
+                  {% endcomment %}
+                </tr>
+                {% comment %} {% for staff in snrStaff %} {% if staff.department
+                == 'Testing' %} {% endcomment %}
+                <tr>
+                  <td>
+                    {{staff.name}}
+                    <br />
+                    {{staff.position}}
+                  </td>
+
+                  {% comment %}
+                  <td>
+                    <i class="fa fa-envelope" aria-hidden="true"></i
+                    >{{staff.email}}
+                    <br />
+                    <i class="fa fa-phone" aria-hidden="true"></i
+                    >{{staff.phone_number}}
+                  </td>
+                  {% endcomment %}
+                </tr>
+                {% comment %} {% endif %} {% endfor %} {% endcomment %}
+                <tr>
+                  <td>
+                    SHRI.A.HARI BHASKARAN
+                    <br />
+                    Deputy Director (Technical)
+                  </td>
+
+                  <td>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    hari@niwe.res.in<br />
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    044-22463982/83/84
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    SHRI.A.R.HASAN ALI
+
+                    <br />Assistant Executive Engineer, WTRS
+                  </td>
+
+                  <td>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    hasanali@niwe.res.in
+                    <br />
+                    <i class="fa fa-phone" aria-hidden="true"></i> 04632 -
+                    261931 / 262033
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    SHRI.K.A.HAJI ABDUL IBRAHIM
+
+                    <br />Record keeper, WTRS
+                  </td>
+
+                  <td>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    ibrahim@niwe.res.in
+
+                    <br />
+                    <i class="fa fa-phone" aria-hidden="true"></i> 04632- 261931
+                  </td>
+                </tr>
+
+                <tr class="text-center">
+                  {% comment %}
+                  <td colspan="2">Standards & Regulation</td>
+                  {% endcomment %}
+                </tr>
+                {% comment %} {% for staff in snrStaff %} {% if staff.department
+                == 'Standards & Regulation' %} {% endcomment %}
+                <tr>
+                  {% comment %}
+                  <td>
+                    {{staff.name}}
+
+                    <br />{{staff.position}}
+                  </td>
+                  {% endcomment %} {% comment %}
+                  <td>
+                    <i class="fa fa-envelope" aria-hidden="true"></i
+                    >{{staff.email}}
+
+                    <br />
+                    <i class="fa fa-phone" aria-hidden="true"></i
+                    >{{staff.phone_number}}
+                  </td>
+                  {% endcomment %}
+                </tr>
+                {% comment %} {% endif %} {% endfor %} {% endcomment %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+
+{% include 'footer.html' %}

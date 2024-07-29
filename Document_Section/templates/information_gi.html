@@ -1,0 +1,298 @@
+{% include 'header.html' %}
+
+    <!-- nav end  -->
+
+    <section class="head-div">
+        <div class="overlay d-flex align-items-center">
+            <div class="container">
+                <h1 class="text-white">General Information</h1>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="document-div">
+        <div class="container">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                {{info.0.title|safe}}
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    {{info.0.description|safe}}
+                    {% comment %} <h6>Growing concern for the environmental degradation has led to the world's interest in renewable energy resources. Wind is commercially and operationally the most viable renewable energy resource and accordingly, emerging as one of the largest source in terms of the renewable energy sector.</h6> {% endcomment %}
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    {{info.1.title|safe}}
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    {{info.1.description|safe}}
+                    {% comment %} <p>Wind is the natural movement of air across the land or sea. Wind is caused by uneven heating and cooling of the earth's surface and by the earth's rotation. Land and water areas absorb and release different amount of heat received from the sun. As warm air rises, cooler air rushes in to take its place, causing local winds. The rotation of the earth changes the direction of the flow of air.</p> {% endcomment %}
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                {{info.2.title|safe}}
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        {{info.2.description|safe}}
+                            {% comment %} Wind electric generator converts kinetic energy available in wind to electrical energy by using rotor, gearbox and generator. {% endcomment %}
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                {{info.3.title|safe}}
+                </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        {{info.3.description|safe}}
+                        {% comment %} <p>The wind turns the blades of a windmill-like machine. The rotating blades turn the shaft to which they are attached. The turning shaft
+                            typically can either power a pump or turn a generator, which produces electricity.</p> 
+
+                            <p>Most wind machines have blades attached to a horizontal shaft. This shaft transmits power through a series of gears,
+                            which provide power to a water pump or electric generator. These are called horizontal axis wind turbines.
+                            </p>
+                            <p>There are also vertical axis machines, such as the Darrieus wind machine, which has two, three, or four long curved blades on 
+                            a vertical shaft and resembles a giant eggbeater in shape.</p>
+                            <p>The amount of energy produced by a wind machine depends upon the wind speed and the size of the blades in the machine.
+                            In general, when the wind speed doubles, the power produced increases eight times. Larger blades capture more wind. 
+                            As the diameter of the circle formed by the blades doubles, the power increases four times.</p>{% endcomment %}
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                {{info.4.title|safe}}
+                </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="wra-list">
+                                {{info.4.description|safe}}
+                                    {% comment %} <li>The project is environment friendly.</li>
+                                    <li>Good wind potential to harness wind energy.</li>
+                                    <li>A permanent shield against ever increasing power prices. The cost per kwh reduces over a period of time as against rising cost for conventional power projects.</li>
+                                    <li>The cheapest source of electrical energy. (on a levelled cost over 20 years.)</li>
+                                    <li>Least equity participation required, as well as low cost debt is easily available to wind energy projects.</li>
+                                    <li>A project with the fastest payback period.</li>
+                                    <li>A real fast track power project, with the lowest gestation period; and a modular concept.</li>
+                                    <li>Operation and Maintenance (O&M) costs are low.</li>
+                                    <li>No marketing risks, as the product is electrical energy.</li>
+                                    <li>A project with no investment in manpower.</li>
+                            </ul> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                {{info.5.title|safe}}
+                </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        {{info.5.description|safe}}
+                      {% comment %} <h5>Main components of a wind electric generator are:</h5>
+                      <ul class="wra-list">
+                                    <li>Tower</li>
+                                    <li>Nacelle</li>
+                                    <li>Rotor</li>
+                                    <li>Gearbox</li>
+                                    <li>Generator</li>
+                                    <li>Braking System</li>
+                                    <li>Yaw System</li>
+                                    <li>Controllers</li>
+                                    <li>Sensors</li>
+                            </ul> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                {{info.6.title|safe}}
+                </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        {{info.6.description|safe}}
+                        {% comment %} <p>An area where a number of wind electric generators are installed is known as a wind farm. The essential requirements for establishment of a wind farm for optimal exploitation of the wind are</p>
+                        <ul class="wra-list">
+
+                                <li>High wind resource at particular site</li>
+                                <li>Adequate land availability</li>
+                                <li>Suitable terrain and good soil condition</li>
+                                <li>Proper approach to site</li>
+                                <li>Suitable power grid nearby</li>
+                                <li>Techno-economic selection of WEGs</li>
+                                <li>Scientifically prepared layout</li>
+                               
+                        </ul> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                {{info.7.title|safe}}
+                </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        {{info.7.description|safe}}
+                        {% comment %} <p>An area where a number of wind electric generators are installed is known as a wind farm. The essential requirements for establishment of a wind farm for optimal exploitation of the wind are</p>
+                        <ul class="wra-list">
+
+                                <li>The capital cost is comparable with conventional power plants. For a wind farm, the capital cost ranges between 4.5 crores to 6.85 crores per MW, depending up on the type of turbine, technology, size and location.</li>
+                                <li>Construction time is less.</li>
+                                <li>Fuel cost is zero.</li>
+                                <li>O & M cost is very low.</li>
+                                <li>Capacity addition can be in modular form.</li>
+                                <li>There is no adverse effect on global environment. The whole system is pollution free and environment friendly.</li>
+                               
+                        </ul> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                {{info.8.title|safe}}
+                </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        {{info.8.description|safe}}
+                        {% comment %} <ul class="wra-list">
+
+                                <li>Sulphur - dioxide (SO2): 2 to 3.2 tonnes</li>
+                                <li>Nitrogen - oxide (NO) ; 1.2 to 2.4 tonnes</li>
+                                <li>Suitable terrain and good soil condition</li>
+                                <li>Carbon - dioxide (CO2) : 300 to 500 tonnes</li>
+                                <li>Particulates : 150 to 280 kg. nes</li>
+                                <li>Particulates : 150 to 280 kg.</li>
+                                <li>Scientifically prepared layout</li>
+                               
+                        </ul> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                Comparison between Fossil Fuels and Wind
+                </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                
+
+                        <div class="table-responsive">
+                        <table class="table table-bordered">
+                      {% for data in compare %}
+                      <tbody>
+                          <tr>
+                          <th scope="row">{{data.heading|safe}}</th>
+                          <td>{{data.fosil_Fuel|safe}}</td>
+                          <td>{{data.Wind_Energy|safe}}</td>
+                          </tr>
+                          {% comment %} <tr>
+                          <th scope="row">Limitation on availability</th>
+                          <td>Inexhaustible resource</td>
+                          <td>Limited in reserves, expected to get completely exhausted in the coming 60 years</td>
+                          </tr>
+                          <tr>
+                          <th scope="row">Transportation</th>
+                          <td>	Used where it is available</td>
+                          <td>Have to be transported from the site for further processing exposing environment to danger</td>
+                          </tr>
+                          
+                          <tr>
+                          <th scope="row">Use in production</th>
+                          <td>Zero emission</td>
+                          <td>Used in producing electricity releasing green house gasses</td>
+                          </tr>
+
+                          <tr>
+                          <th scope="row">Geo-political Implications</th>
+                          <td>Reduces our reliance on oil, safeguarding national security</td>
+                          <td>Over-reliance on oil as a resource has undermined our energy security. E.g. OPEC crises of 1973, Gulf War of 1991 and Iraq War of 2003</td>
+                          </tr>
+
+                          <tr >
+                        
+                          <td colspan="3">There is no adverse effect on global environment. The whole system is pollution free and environment friendly.</td>
+                          </tr> {% endcomment %}
+                      </tbody>
+                      {% endfor %}
+                  </table>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEleven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                {{info.9.title|safe}}
+                </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        {{info.9.description|safe}}
+                        {% comment %} <p>An area where a number of wind electric generators are installed is known as a wind farm. The essential requirements for establishment of a wind farm for optimal exploitation of the wind are</p>
+                        <ul class="wra-list">
+
+                                <li>Wind machines must be located where strong, dependable winds are available most of the time.</li>
+                                <li>Because winds do not blow strongly enough to produce power all the time, energy from wind machines is considered "intermittent," that is, it comes and goes. Therefore, electricity from wind machines must have a back-up supply from another source.</li>
+                                <li>As wind power is "intermittent," utility companies can use it for only part of their total energy needs.</li>
+                                <li>Wind towers and turbine blades are subject to damage from high winds and lighting. Rotating parts, which are located high off the ground can be difficult and expensive to repair.</li>
+                                <li>Electricity produced by wind power sometimes fluctuates in voltage and power factor, which can cause difficulties in linking its power to a utility system.</li>
+                                <li>The noise made by rotating wind machine blades can be annoying to nearby neighbors.</li>
+                                <li>People have complained about aesthetics of and avian mortality from wind machines.</li>
+                               
+                        </ul> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    {% include 'footer.html' %}

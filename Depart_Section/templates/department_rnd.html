@@ -1,0 +1,98 @@
+{% include 'header.html' %}
+
+    <!-- nav end  -->
+
+    <section class="head-div">
+        <div class="overlay d-flex align-items-center">
+            <div class="container">
+                <h1 class="text-white">Research and Development (R&D)</h1>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="rnd-div">
+        <div class="container">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Research and Development (R&D)
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    
+                <div class="accordion-body">
+
+                    {% comment %} {{ data.Research_and_Development|safe }} {% endcomment %}
+                    
+                R&D Unit of NIWE was established with the aim of addressing the specific purpose of supporting time bound and mission oriented research and development programmes to achieve and maintain world class, reliable and cost effective technology in wind power systems. The Unit continues to improve its knowledge and skills through continuous learning, to keep pace with the State-of-the-Art Technology and excel through innovative approaches. The Unit carries out in-house R&D and coordinates research and development programs through effective networking with academic institutions, industry, experts and consultants working in a wide spectrum of disciplines for the benefit of wind energy sector.
+                <ul class="mt-3">
+                    <li>Industrial Research & Acadamic Interaction (IRAI) MoU <span>&nbsp; <a href="/statics/images/(IRAI)_MoU.pdf" style="color:red;font-size:20px"> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></span> &nbsp;<span> <a href="/statics/images/Industrial_Research_and_Academic_Interaction_(IRAI)_MoU (2).docx" style="font-size:20px"> <i class="fa fa-file-word-o" aria-hidden="true"></i></a></span></li>
+                    <li>NIWE being the model institution in the entire Asia-pacific accordingly to demonstrate the renewable energy technologies and also to conduct research relevant activities, the following facilities has been established</li>  
+                </ul>
+                <ol type="a" class="mt-3">
+                        <li> &nbsp;2 MW Variable speed wind turbine</li>
+                        <li> &nbsp;600 kW constant speed Wind Turbine</li>
+                        <li> &nbsp;200 kW constant speed wind turbines</li>
+                        <li> &nbsp;5 kW wind solar hybrid system   </li>
+                    </ol> 
+                </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                {{RnD.1.title|safe}}
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                    {{RnD.1.description|safe}}
+                    {% comment %} <ul>
+                        <li>Establishment of Pan-India Research Network</li>
+                        <p>Pan-India Research Network has been established at NIWE where all the OEM’s of WT’s, researchers and institutions conducting work in Wind engineering/ Technology to be brought to one common platform, which will open an indigenous research network in India. The intention is to create the hub of synergy for all wind related research in India, where Industry identified issues will be taken up for research by a consortia of Academia with support from MNRE through NIWE.</p>
+                    </ul> {% endcomment %}
+
+
+                    {% comment %} <ul>
+                        <li class="pb-3">RFP Projects</li>
+
+                        <p >1. Development and Validation of Design Methodologies and Design Tools to enable Wind Turbine Rotors / Blades to be Optimised for Low and Moderate Wind Regimes by CSIR - National Aerospace Laboratories</p>
+                        <p>2. System configuration of 75kW SPV based hybrid system installed at WTRS Wind Farm, Kayathar</p>
+                        <p>3. Mathematical Modeling on the Wind Solar Hybrid installed at WTRS Wind Farm, Kayathar</p>
+                        <p>4. Project report with lessons learnt from the Matrix converter research project completed by SSN Engineering College</p>
+                        <p>5. Experimental Characteristics of Wind Turbine Blading Over Full 0 to 360 Degree Angle of Attack</p>
+                        <p>6. Study of Power Quality Issues in Grid Connected Wind Farms and Identification of Remedial Measures</p>
+                        <p>7. Power evacuation studies for grid integrated wind energy conversion system</p>
+                    </ul>  {% endcomment %}
+                </div>   
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                {{RnD.2.title}}
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                    {{RnD.2.description|safe}}
+                    {% comment %} <ul>
+                        <li>Power Evacuation Studies for Wind farm and Hybrid Farm development</li>
+                    </ul> {% endcomment %}
+                </div>
+                      
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    {% include 'footer.html' %}

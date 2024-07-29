@@ -1,0 +1,48 @@
+{% include 'header.html' %}
+
+<!-- nav end  -->
+
+<section class="head-div">
+  <div class="overlay d-flex align-items-center">
+    <div class="container">
+      <h1 class="text-white">FAQs</h1>
+    </div>
+  </div>
+</section>
+
+<section class="rrs_section faq-div">
+  <div class="container">
+    <p>{{faqs.0.preamble|safe}}</p>
+    <ul>
+      {% comment %}
+      <a href="https://www.fortiswindenergy.com/faq/" target="_blank"
+        ><li>{{faqs.0.Faq|safe}}</li></a
+      >
+      <a href="https://www.aweo.org/faq.html" target="_blank"
+        ><li>{{faqs.1.Faq|safe}}</li></a
+      >
+      <a href="https://www.renewableuk.com/" target="_blank"
+        ><li>{{faqs.2.Faq|safe}}</li></a
+      >
+      <a href="https://windeis.anl.gov/faq/index.cfm" target="_blank"
+        ><li>{{faqs.3.Faq|safe}}</li></a
+      >
+      <a
+        href="https://www.rpc.com.au/pages/faq/wind-power-site-evaluation"
+        target="_blank"
+        ><li>{{faqs.4.Faq|safe}}</li></a
+      >
+      <a href="https://www.mdpub.com/Wind_Turbine/windfaq.html" target="_blank"
+        ><li>{{faqs.5.Faq|safe}}</li></a
+      >
+      <a
+        href="https://cleanergy.blogspot.com/2009/09/wind-turbine-at-home-wind-energy-faq.html"
+        target="_blank"
+        ><li>{{faqs.6.Faq|safe}}</li></a
+      >
+      {% endcomment %}
+    </ul>
+  </div>
+</section>
+
+{% include 'footer.html' %}

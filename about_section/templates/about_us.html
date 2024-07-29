@@ -1,0 +1,118 @@
+{% include 'header.html' %}
+
+<section class="head-div">
+  <div class="overlay d-flex align-items-center">
+    <div class="container">
+      <h1 class="text-white">About Us</h1>
+    </div>
+  </div>
+</section>
+
+<section class="dgm-div">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">{% include 'aboutsidenav.html' %}</div>
+      <div class="col-md-8">
+        <div class="dgm-text">
+          <!--ABOUT NIWE-->
+
+          {% for data in aboutUs %}
+
+          <h3>{{data.title}}</h3>
+
+          <p>{{data.description|safe}}</p>
+
+          {% comment %}
+          <p>
+            National Institute of Wind Energy (NIWE) has been established in
+            Chennai in the year 1998, as an autonomous R&D institution by the
+            Ministry of New and Renewable Energy (MNRE), Government of India. It
+            is a knowledge-based institution of high quality and dedication,
+            offers services and seeks to find complete solutions for the kinds
+            of difficulties and improvements in the entire spectrum of the wind
+            energy sector by carrying out further research. It has a Wind
+            Turbine Test Station (WTTS) at Kayathar with the technical & partial
+            financial support by DANIDA, Govt. of Denmark.
+          </p>
+
+          <p class="pt-2">
+            The National Institute of Wind Energy is functioning with the
+            following structure.
+          </p>
+          <ul>
+            <li>
+              <b>Research and Development (R&D) Division:</b> Its main focus
+              towards novelty in developments of components as well as in
+              sub-systems of wind turbines by collaborative works with other R&D
+              institutions/industry.
+            </li>
+            <li>
+              <b>Certification and Information Technology Division:</b> The
+              Division carries out Type certification of wind turbines based on
+              IS/IEC 61400-22, And also involved in creating the necessary IT
+              infrastructure for effective dissemination of information.
+            </li>
+            <li>
+              <b>Testing and Standards & Regulation Division :</b>
+              Standardization works in wind Energy Sector, Facilitation for Grid
+              Synchronization of Prototype of wind turbines and Revised list of
+              Models and Manufactures of wind turbines and this division offer
+              Safety and function testing,
+            </li>
+            <li>
+              <b>Skill Development & Training Division:</b> To establish and
+              update the data bank and serve as finest information centre in
+              wind energy by collecting, collating and analyzing the related
+              information. National and International training workshops are
+              being organized for the benefit of stakeholders by the division
+              regularly. The division publishes a quarterly newsletter, PAVAN
+              that carries topical information regarding the field and addresses
+              the need for information, both for casual and serious interest.
+            </li>
+            <li>
+              <b>Wind Resource Assessment Division :</b> To establish world
+              class facilities in testing of complete Wind Turbine Generator
+              Systems (WTGS) according to international standards (IEC). The
+              Division identifies resource rich regions in the country by
+              conducting wind resource micro survey and offers its services to
+              the wind farm developers. To prepare wind map for the nation, it
+              is assessing and analyzing wind resources.The division offer
+              service support Power performance measurement, Load measurements
+              etc,.
+            </li>
+
+            <li>
+              <b>Offshore Wind Development Division:</b> The Offshore Wind
+              Development Department aims to accelerate the deployment of
+              offshore wind projects in India, fostering energy security and
+              environmental sustainability through advanced cutting-edge
+              technologies, comprehensive research, policy formulation, and
+              industry collaboration
+            </li>
+          </ul>
+
+          <p>
+            National Institute of Wind Energy is a "meant only for wind energy
+            technology" research organization in Asia and perhaps in countries
+            of the South. It is a young organization peopled with highly
+            experienced professionals with expertise in all fields that wind
+            turbine technology. This unique combination makes it a forward
+            looking and practical place that will take the next logical steps in
+            taking wind energy applications in the right directions. With its
+            open approach to all wind energy related science and technology, you
+            can be sure to get all the assistance you may need from resource
+            assessment to project implementation. It is sure that the NIWE with
+            its excellent infrastructure & resource, will support, sustain and
+            achieve high quality in the wind energy domain. The NIWE will also
+            promote expert products and services to other countries too.
+          </p>
+          {% endcomment %} {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+
+{% include 'footer.html' %}

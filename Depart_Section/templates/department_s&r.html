@@ -1,0 +1,490 @@
+{% include 'header.html' %}
+
+<!-- nav end  -->
+
+<section class="head-div">
+  <div class="overlay d-flex align-items-center">
+    <div class="container">
+      <h1 class="text-white">Testing and Standards & Regulation</h1>
+    </div>
+  </div>
+</section>
+
+{% for data in snr %}
+
+<section class="rnd-div">
+  <div class="container">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            Historical perspective
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            {{data.historical_Perspective|safe}} {% comment %}
+            <h5>Standards & Regulation</h5>
+
+            <p>
+              Indian wind energy sector has been developing into the main stream
+              of industrial activity with active participation of the private
+              sector. An Indian wind turbine certification scheme viz., Type
+              Approval - Provisional Scheme was developed by NIWE with the
+              technical assistance of RISO National Laboratory, Denmark
+              (presently known as DTU, Denmark). The TAPS 2000, which was the
+              first of its kind certification scheme for wind turbines, was
+              approved and issued by Ministry of New and Renewable Energy (MNRE)
+              and was implemented by NIWE. In addition, NIWE has been involved
+              in preparation of Indian Standards on wind turbines and providing
+              technical support to Bureau of Indian Standards (BIS).
+            </p>
+            <p>
+              Ministry of New and Renewable Energy (MNRE) has been issuing the
+              guidelines for Wind Power Projects to streamline the development
+              and facilitate healthy and orderly growth of the Wind Power Sector
+              in the country. MNRE is issuing Revised List of Models and
+              Manufactures of wind turbines (RLMM). NIWE has been providing the
+              technical support to MNRE for implementation of RLMM process. NIWE
+              is also facilitating the grid synchronization of prototype wind
+              turbine models to carry out type testing as per the guidelines
+              issued by MNRE.
+            </p>
+
+            <h5>Testing</h5>
+            <p>
+              M&T station is the accepted primary Lab in India for Wind Turbine
+              Testing as per the National Lab Policy of MNRE. GoI and all other
+              laboratories operating in the field of Wind Turbine Testing will
+              be secondary labs to NIWE. Together they will work to build the
+              capacity and delivery mechanism for world class testing for Wind
+              Turbines in India for all the stakeholders.
+            </p>
+            <p>
+              It is the first NABL Accredited Test Laboratory in India for
+              providing the services related to Type testing of Wind Turbines in
+              the context of wind turbine type certification, in compliance with
+              relevant standards and rules. The Accreditation was acquired in
+              the year 2006 and still holds the distinction of being the only
+              NABL Accredited lab in India for the past 13 years.
+            </p>
+
+            <p>
+              NIWE's Wind Turbine Test Station (WTTS) near Kayathar in Tamil
+              Nadu was established in the year 1999 with the technical
+              assistance of Riso National Laboratory, Denmark under Danish
+              International Development Agency (DANIDA) grant and with financial
+              assistance and guidance from the Ministry of New and Renewable
+              Energy (MNRE), Government of India. Presently plans are underway
+              for developing the second Wind Turbine Test Station exclusively
+              for the purpose of Offshore Wind Turbines, which when commissioned
+              will be the first in India.
+            </p>
+
+            <h5>The Kayathar WTTS has the following facilities:</h5>
+            <ul class="mt-3">
+              <li>
+                Availability of two test beds to test wind turbines up to a
+                total capacity of 1650 kW & are expandable with readily
+                available grid connection for each test bed.
+              </li>
+              <li>
+                Readily available met masts in front of each test bed, designed
+                to heights of 75 meters and 50 meters for acquiring
+                meteorological data at the hub heights of the test turbines.
+              </li>
+              <li>
+                Two control rooms, one for each test bed with state-of-art data
+                acquisition systems and one office building.
+              </li>
+            </ul>
+
+            <h5>
+              The Research Station operating at WTTS and open for all the Wind
+              Turbine Stakeholders has the following features:
+            </h5>
+            <ul class="mt-2">
+              <li>
+                Established in one of the Windy Pass Area namely Senkottai Pass
+                considered as the best windy area in Tamil Nadu, the research
+                station is spread over 100 acres of land.
+              </li>
+              <li>
+                Total Wind Turbine installed capacity at the Research facility
+                is 6400 kW consisting of nine number of 200 kW (Stall regulated
+                fixed speed), one 600 kW (Pitch regulated fixed speed), one 2000
+                kW (Pitch regulated Variable Speed) and one 2000 kW (Pitch
+                regulated DFIG) Wind Turbines.
+              </li>
+              <li>75 kWp Solar Power Plant for Hybrid studies.</li>
+              <li>
+                On line Wind Data Collection from 3 different Metrological Masts
+                of different heights 50m, 75m and 120m at Research Station,
+                Kayathar.
+              </li>
+              <li>
+                Asia's 1st exclusive Maker's Space for SWT innovators under
+                development at WTTS.
+              </li>
+              <li>
+                SWT Blade & Drive Train Hub Test Facility under Design and will
+                be executed in the RE Demo Lab under construction at WTTS.
+              </li>
+            </ul>
+            {% endcomment %}
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            Activities
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            {{data.activites|safe}} {% comment %}
+            <h5>Standards & Regulation</h5>
+            <ul>
+              <li>Standards:</li>
+              <p>
+                Bureau of Indian Standards (BIS) is the National Standards Body
+                which issues Indian Standards. A committee viz., Wind Turbine
+                Sectional Committee (ETD 42) has been formulated by BIS for the
+                preparation of Indian standards on wind turbines, under the
+                Chairmanship of Director General, NIWE. NIWE provides the
+                technical support to BIS in all the standards related works
+                including IEC standards / IECRE documents.
+              </p>
+              <li>Prototype Wind Turbines Models:</li>
+              <p>
+                MNRE has issued the guidelines on installation of prototype wind
+                turbine models in India to facilitate the installation of
+                Prototype wind turbine models to carry out the Type Testing for
+                obtaining Type Certificate. NIWE facilitates for Grid
+                Synchronization of Prototype of wind turbine models by
+                implementing MNRE guidelines on prototype wind turbine models.
+              </p>
+
+              <li>
+                Revised List of Models and Manufacturers of wind turbines
+                (RLMM):
+              </li>
+
+              <p>
+                Revised List of Models and Manufacturers of wind turbines
+                (RLMM):
+              </p>
+            </ul>
+
+            <h5>Testing</h5>
+
+            <p>
+              The WTTS Test Station has currently two test beds with grid
+              connection to test wind turbines up to 1250kW and 400kW
+              capacities. The number of test beds can be enhanced and higher
+              capacity wind turbines can be tested when offered.
+            </p>
+            <p>
+              Each bed with its control room is equipped with sophisticated data
+              acquisitions systems having validated software and state of art
+              architecture. Currently two met masts are available in front of
+              each test bed.
+            </p>
+            <p>
+              The terrain features are gently sloping towards the western
+              direction which is also the predominant wind direction and the
+              wind season is from April to September during which testing will
+              be conducted.
+            </p>
+
+            <h5>Tests for Wind Turbines</h5>
+            <ul>
+              <li>Power Performance measurements</li>
+              <li>Safety and Function testing</li>
+              <li>Yaw efficiency</li>
+              <li>Load Measurements & Duration Test (exclusively for SWT)</li>
+              <li>Special measurements tailored for customer requests.</li>
+            </ul>
+            <p>
+              The Division also takes up field measurements at client locations
+              on request.
+            </p>
+
+            <h5>Advantages of Testing Wind Turbines</h5>
+            <p>The measurements of a wind turbine would assist a</p>
+
+            <ul>
+              <li>
+                Wind turbine manufacturer striving for better design and
+                performance.
+              </li>
+              <li>
+                Wind turbine purchaser in specifying requirements for design and
+                performance.
+              </li>
+              <li>
+                Wind turbine operator in verifying and monitoring performance.
+              </li>
+              <li>
+                Wind turbine investors in wind farm projects based on what wind
+                turbines can deliver regards to its design and performance.
+              </li>
+            </ul>
+            {% endcomment %}
+          </div>
+        </div>
+      </div>
+
+      <h5 class="border-bottom border-2 pb-3">
+        <a
+          href="{{data.guidelines_for_Onshore_Wind_Power_Projects.url}}"
+          style="color: #00899a"
+          >Latest MNRE Guidelines for Development of Onshore Wind Power
+          Projects</a
+        >
+      </h5>
+
+      <h5 class="border-bottom border-2 pb-3 mt-4">
+        <a
+          href="{{data.guidelines_for_prototype_wind_turbine.url}}"
+          style="color: #00899a"
+          >Latest MNRE guidelines for installation of prototype wind turbine
+          models</a
+        >
+      </h5>
+
+      <div class="accordion-item mt-4">
+        <h2 class="accordion-header" id="headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            Initiatives - New Upcoming Facilities
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            {{data.initiatives|safe}} {% comment %}
+            <p>
+              Creation of the following new national test facilities are at
+              various stages of progress and the facilities are expected to be
+              dedicated to the service of the nation soon.
+            </p>
+            <ul>
+              <li>Blade Test Centre for Large & Small Wind Turbine Blades</li>
+
+              <li>Drive Train Test Centre for Small Wind Turbines</li>
+              <li>Fault Ride Through (LVRT) Test facility</li>
+              <li>Power Quality Measurements</li>
+              <li>Acoustics (for Wind Turbine ) measurements</li>
+              <li>Avian Fauna Study</li>
+              <li>Environmental Impact Assessment study</li>
+            </ul>
+            {% endcomment %}
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFour"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            Achievements - Internationally Traceable Quality Assurance in
+            Testing
+          </button>
+        </h2>
+        <div
+          id="collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingFour"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            {{data.achivements|safe}} {% comment %}
+            <h5>Division's Quality Policy</h5>
+            <ul>
+              <p>
+                We, a part of NIWE, are committed to provide credible, prompt
+                and reliable service in testing of Wind Turbine to our valued
+                customers in the wind energy sector.
+              </p>
+
+              <p>
+                We shall maintain highest standards of professional ethics,
+                confidentiality & impartiality in our operations. Our methods
+                and practices are transparent and conforming to national and
+                international standards.
+              </p>
+              <p>
+                We are committed to ensure competence of all personnel who are
+                involved in the testing operation in order to maintain
+                consistency in our operation.
+              </p>
+              <p>
+                We shall strive to meet the expectations of our customer through
+                implementation of IS/ISO/IEC 17025 and continually improve upon
+                it.
+              </p>
+            </ul>
+
+            <h5>Quality Management System - ISO 9001 & IS/IEC/ISO 17025</h5>
+
+            <ul>
+              <li>
+                The testing services of the Division conforms to the Quality
+                Management System ISO 9001:2015, awarded by DNV and valid since
+                11.08.2016. <b>DNV Certificate</b>
+              </li>
+
+              <li class="pt-2">
+                Accreditation - The testing services of NIWE have been assessed
+                and accredited in accordance to the requirements of the ISO/IEC
+                17025 by National Accreditation Board for testing and
+                calibrations laboratories, New Delhi. NABL has a MRA (Mutual
+                Recognition Arrangement) with APLAC (Asia Pacific Laboratory
+                Accreditation Cooperation) which in turn has a MRA with ILAC
+                (International Laboratory Accreditation Cooperation).
+                <b>CERTIFICATE OF ACCREDITATION</b>
+              </li>
+            </ul>
+            {% endcomment %}
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFive"
+            aria-expanded="false"
+            aria-controls="collapseFive"
+          >
+            Success stories
+          </button>
+        </h2>
+        <div
+          id="collapseFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingFive"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            {{data.success_Story|safe}} {% comment %}
+            <p>
+              During the past 22 years of operation have completed 85 testing
+              services Projects for both National & International clientele in
+              Small & Large Wind Turbine Testing since the year 1999.
+            </p>
+            {% endcomment %}
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseSix"
+            aria-expanded="false"
+            aria-controls="collapseSix"
+          >
+            Downloads
+          </button>
+        </h2>
+        <div
+          id="collapseSix"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingSix"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            {{data.downloads|safe}} {% comment %}
+            <ul>
+              <li>Evaluation of test site for Type testing</li>
+              <li>Guidelines for Scheduling Activities for Type Testing</li>
+              <li>DNV Certificate</li>
+              <li>Certificate of Accreditation</li>
+              <li>
+                MNRE Call for R&D Proposal in thrust areas of Small Wind Energy
+                Hybrid System
+              </li>
+              <li>Fourteenth List of Empanelment of Small Wind Turbines</li>
+              <li>
+                Guidelines on the technical requirement to be fulfilled by a
+                small wind turbine manufacturer for empanelment with MNRE/NIWE
+              </li>
+              <li>
+                Call for R&D Proposal in thrust areas of Small Wind Energy
+                Hybrid System
+              </li>
+            </ul>
+            {% endcomment %}
+          </div>
+        </div>
+      </div>
+
+      <h5 class="mt-4">Tests Carried out</h5>
+      <a href="#" style="color: #00899a; font-size: 20px">
+        Click Here for Overview of Test and Measurements Carried Out and
+        Ongoing</a
+      >
+
+      <h5 class="mt-4">Archives:-</h5>
+
+      <a href="#" style="color: #00899a; font-size: 20px">Documents</a><br />
+
+      <a href="#" style="color: #00899a; font-size: 20px">Photos</a>
+    </div>
+  </div>
+</section>
+
+{% endfor %}
+
+<!-- footer -->
+
+{% include 'footer.html' %}

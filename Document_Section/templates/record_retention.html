@@ -1,0 +1,28 @@
+{% include 'header.html' %}
+
+    <!-- nav end  -->
+
+    <section class="head-div">
+        <div class="overlay d-flex align-items-center">
+            <div class="container">
+                <h1 class="text-white">Records Retention Schedule</h1>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="rrs_section">
+        <div class="container">
+                <a href="{{record.0.ministry_Approval.url}}" target="_blank"><h3>Ministry Approval</h3></a>
+
+                <a href="{{record.1.NIEW_Records_Retention_Schedule.url}}" target="_blank"><h4>NIWE Records Retention Schedule</h4></a>
+
+        </div>
+
+    </section>
+
+
+
+    {% include 'footer.html' %}

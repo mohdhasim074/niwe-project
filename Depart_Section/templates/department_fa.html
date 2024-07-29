@@ -1,0 +1,71 @@
+ 
+{% include 'header.html' %}
+
+
+    <section class="head-div">
+        <div class="overlay d-flex align-items-center">
+            <div class="container">
+                <h1 class="text-white">Finance & Administration (F&A)</h1>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="finance-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% for data in fin %}
+                        {{data.description|safe}}
+                    {% comment %} <p>Department Serving as the Artery Connecting Scientific Divisions of Wind Energy Technology & Solar Energy Resources with Management.</p>
+
+                    <h5>MAIN FUNCTIONS</h5>
+                    <ul>
+                        <li>Policy matters</li>
+                        <li>Interface between MNRE & NIWE's Division</li>
+                        <li>Co-ordination</li>
+                        <li>Establishment</li>
+                        <li>Finance & Accounts</li>
+                        <li>Administration</li>
+                        <li>Stores and Purchase</li>
+                        <li>Procurements, imports & service contracts, E-procurement, Gem, E-auction, inventory management</li>
+                        <li>Tax management</li>
+                        <li>Statutory compliances, RTI, GST, EPF</li>
+                        <li>Progressive use of Hindi as official language</li>
+                        <li>Security & housekeeping</li>
+                        <li>Land, building & campus development</li>
+                        <li>Convening of Governing Council, Finance Committee and Annual general meetings</li>
+               
+                    </ul> {% endcomment %}
+
+                      <a href="">{{data.NIWE_Pan_ARN_GST_Details|safe }}</a> 
+                    {% comment %} <h5><a href="">NIWE Permanent Account Number (PAN) : AAATC2168D</a></h5>
+                    <h5><a href="">NIWE GST ARN (Application Reference Number) : AA330417044133N</a></h5>
+                    <h5><a href="">NIWE's GST Registration Certificate</a></h5> {% endcomment %}
+                    {% endfor %}
+                </div>
+                <div class="col-md-4">
+                <div class="depart-side-tabs">
+                    <ul>
+            
+                        <a href="{% url 'admin' %}">
+                            <li>Administration</li>
+                        </a>
+                        <a href="{% url 'fin' %}"> 
+                            <li>Finance</li>
+                        </a>
+                        <a href="{% url 'purchase' %}">
+                            <li>Purchase</li>
+                        </a>
+                        
+                    </ul>
+
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {% include 'footer.html' %}

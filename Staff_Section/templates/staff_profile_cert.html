@@ -1,0 +1,149 @@
+{% include 'header.html' %}
+
+
+
+    <section class="head-div">
+        <div class="overlay d-flex align-items-center">
+            <div class="container">
+                <h1 class="text-white">Certification and Information Technology (C&IT)</h1>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="staff-dev">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <!-- sidenav bar -->
+                    {% include 'sidenav.html' %}
+                </div>
+
+                <div class="col-md-8 col-12">
+                    <div class="staff-table">
+                        <div class="table-responsive">
+                            <table class="table table-bordered   table-striped" style="margin-top:20px">
+                                <thead class="table__head">
+                                    <tr>
+
+                                        <th><i class="fa fa-user" aria-hidden="true"></i> Name</th>
+                                        <th><i class="fa fa-map-marker" aria-hidden="true"></i> Contact</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody class="table__body">
+
+                                    <tr>
+                                        {% for staff in staffs %}
+                                            {% if not staff.department %}
+                                                <tr>
+                                                    <td>
+                                                        {{ staff.name }}<br>
+                                                        {{ staff.position }}
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-envelope" aria-hidden="true"></i>{{ staff.email }}<br>
+                                                        <i class="fa fa-phone" aria-hidden="true"></i>{{ staff.phone_number }}
+                                                    </td>
+                                                </tr>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </tr>
+
+                                    <tr>
+
+                                        <td colspan="2">Information Technology</td>
+
+
+                                    </tr>
+                                    
+                                    <tr>
+                                        {% for staff in staffs %}
+                                            {% if staff.department == "Information Technology" %}
+                                                <tr>
+                                                    <td>
+                                                        {{ staff.name }}<br>
+                                                        {{ staff.position }}
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-envelope" aria-hidden="true"></i>{{ staff.email }}<br>
+                                                        <i class="fa fa-phone" aria-hidden="true"></i>{{ staff.phone_number }}
+                                                    </td>
+                                                </tr>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </tr>
+
+                                    </tr>
+
+                                            <td colspan="2">Certification</td>
+
+                                    <tr>
+
+                                        <tr>
+                                            {% for staff in staffs %}
+                                                {% if staff.department == "Certification" %}
+                                                    <tr>
+                                                        <td>
+                                                            {{ staff.name }}<br>
+                                                            {{ staff.position }}
+                                                        </td>
+                                                        <td>
+                                                            <i class="fa fa-envelope" aria-hidden="true"></i>{{ staff.email }}<br>
+                                                            <i class="fa fa-phone" aria-hidden="true"></i>{{ staff.phone_number }}
+                                                        </td>
+                                                    </tr>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </tr>
+                                    {% comment %} <tr>
+
+                                        <td colspan="2">Information Technology</td>
+
+
+                                    </tr>
+
+                                    <tr>
+                                        <td>SHRI.YELCHURI SRINATH<br>
+                                            Assistant Director(Technical)</td>
+
+                                        <td><i class="fa fa-envelope" aria-hidden="true"></i> ysrinath@niwe.res.in<br>
+                                            <i class="fa fa-phone" aria-hidden="true"></i>  044-2246 3982/83/84</td>
+
+                                    </tr>
+
+                                       <td colspan="2">Certification</td>
+
+                                    <tr>
+                                        <td>SHRI.S. ARULSELVAN<br>
+                                            Assistant Executive Engineer</td>
+
+                                        <td><i class="fa fa-envelope" aria-hidden="true"></i>  arulselvan@niwe.res.in<br>
+                                            <i class="fa fa-phone" aria-hidden="true"></i>  044-2246 3982/83/84</td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td>SHRI.S.PARAMASIVAN
+                                            <br>Assistant Engineer</td>
+
+                                        <td><i class="fa fa-envelope" aria-hidden="true"></i> paramasivan@niwe.res.in<br>
+                                            <i class="fa fa-phone" aria-hidden="true"></i>  044-2246 3982 / 83 / 84</td>
+
+                                    </tr> {% endcomment %}
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ 
+    <!-- footer -->
+
+    {% include 'footer.html' %}

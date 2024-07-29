@@ -1,0 +1,137 @@
+{% include 'header.html' %}
+
+    <!-- nav end  -->
+
+    <section class="head-div">
+        <div class="overlay d-flex align-items-center">
+            <div class="container">
+                <h1 class="text-white">Revised Guidelines for Wind Power Project</h1>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="hwed-sec">
+        <div class="container">
+        <div class="table-responsive">
+            <table class="table  table-bordered table-hover">
+                <thead class="table-success">
+                    <tr class="text-center">
+                    <th scope="col">Sl.No</th>
+                    <th scope="col" colspan="2">Description</th>
+                    <th scope="col">Date</th>
+                
+                    </tr>
+                </thead>
+                {% for data in revised %}
+                <tbody>
+                    <tr>
+                    <th scope="row">{{data.sr_No}}</th>
+                    <td colspan="2">{{data.description|safe}}</td>
+                    <td>{{data.date}}</td>
+                
+                    </tr>
+                    {% comment %} <tr>
+                    <th scope="row">2</th>
+                    <td colspan="2">Latest MNRE Guidelines for installation of prototype wind turbine models	</td>
+                    <td>02.06.2016</td>
+                
+                    </tr>
+                    <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">MNRE Guidelines dated 19.11.2014.	</td>
+                    <td>19.11.2014</td>
+                    </tr>
+
+                    </tr>
+                    <tr>
+                    <th scope="row">4</th>
+                    <td colspan="2">Guidelines for Implementation of Wind Resource Assessment in Uncovered/ New Areas under NCEF Scheme and subsequent development.  	</td>
+                    <td>11.07.2014</td>
+                    </tr>
+
+                    </tr>
+                    <tr>
+                    <th scope="row">5</th>
+                    <td colspan="2"> Revised Guidelines for Wind Power Projects - Self Certification regarding.</td>
+                    <td>08.01.2010</td>
+                    </tr>
+
+                    </tr>
+                    <tr>
+                    <th scope="row">6</th>
+                    <td colspan="2">Revised Guidelines for Wind Power Projects.	</td>
+                    <td>13.06.1996</td>
+                    </tr>
+
+                    </tr>
+                    <tr>
+                    <th scope="row">7</th>
+                    <td colspan="2">Revised Guidelines for Wind Power Projects - Self Certification regarding.</td>
+                    <td>	08.12.2009</td>
+                    </tr>
+
+                    </tr>
+                    <tr>
+                    <th scope="row">8</th>
+                    <td colspan="2">Revised Guidelines for Wind Power Projects - Self certification regarding.	</td>
+                    <td>06.07.2006</td>
+                    </tr>
+
+                    </tr>
+                    <tr>
+                    <th scope="row">9</th>
+                    <td colspan="2">Revised Guidelines for Wind Power Projects - Self certification regarding.	</td>
+                    <td>04.10.2004</td>
+                    </tr>
+
+                    </tr>
+                    <tr>
+                    <th scope="row">10</th>
+                    <td colspan="2">Revised Guidelines for Wind Power Projects - Self certification regarding.	</td>
+                    <td>31.03.2003</td>
+                    </tr>
+
+
+                    </tr>
+                    <tr>
+                    <th scope="row">11</th>
+                    <td colspan="2">Revised Guidelines for Wind Power Projects, regarding.	</td>
+                    <td>04.03.2002</td>
+                    </tr>
+
+                    </tr>
+                    <tr>
+                    <th scope="row">12</th>
+                    <td colspan="2">Revised Guidelines for Wind Power Projects, regarding.	</td>
+                    <td>23.10.2000</td>
+                    </tr>
+
+
+                    </tr>
+                    <tr>
+                    <th scope="row">13</th>
+                    <td colspan="2">Modification to Revised Guidelines for Wind Power Projects.	</td>
+                    <td>24.05.1999</td>
+                    </tr>
+
+                    </tr>
+                    <tr>
+                    <th scope="row">14</th>
+                    <td colspan="2">Revised Guidelines for Wind Power Projects – Clarifications – reg.	</td>
+                    <td>27.02.1997</td> {% endcomment %}
+                    </tr>   
+                </tbody>
+                {% endfor %}
+            </table>
+        </div>
+        </div>
+    </section>
+
+   
+
+    <!-- footer -->
+
+    {% include 'footer.html' %}
